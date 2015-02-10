@@ -17,7 +17,7 @@ permalink: /Details/
   </ul>
   
   <ul class="post-list">
-    {% for aspect_hash in site.data.aspects | sort: 'id' %}
+    {% for aspect_hash in site.data.aspects | sort: 'title' %}
     {% assign aspect = aspect_hash[1] %}
       <li> <a name="{{ aspect.id }}"></a>
         <h1>
