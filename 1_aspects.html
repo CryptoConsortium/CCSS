@@ -3,6 +3,7 @@ layout: default
 title: Details
 permalink: /Details/
 ---
+<<<<<<< HEAD
 <div class="home">
 
   <ul class="aspect-list" name="top">
@@ -13,10 +14,35 @@ permalink: /Details/
 	  		<li>{{category}}</li>  	
 	  	{% endif %}
   	  	<li><a href='#{{aspect.id}}'>{{aspect.id}} {{aspect.title}}  </a></li>
+=======
+
+
+{% assign aspects_sorted = '101-KeySeedGeneration|102-WalletCreation|103-KeyStorage|104-KeyUsage|105-KeyCompromisePolicy|106-KeyholderGrantRevokePoliciesAndProcedures|201-SecurityAuditsAndPentests|202-DataSanitizationPolicy|203-ProofOfReserve|204-AuditLogs' | split: '|' %}	
+
+<div class="home">
+
+  <ul class="aspect-list" name="top">
+	  
+	  
+	 {% for current_aspect in aspects_sorted %}
+	  {% for aspect_hash in site.data.aspects  %}
+	  
+  	  	{% assign aspect = aspect_hash[1] %}
+
+  	  	{% if aspect.file == current_aspect %}
+	  	  	{% if category != aspect.category %}
+		  	  	{% assign category = aspect.category %}
+		  	  	<li>{{category}}</li>  	
+		  	  	{% endif %}
+		  	  	<li><a href='#{{aspect.id}}'>{{aspect.id}} {{aspect.title}}  </a></li>
+		{% endif %} 
+		{% endfor %}
+>>>>>>> gh-pages
   	{% endfor %}
   </ul>
   
   <ul class="post-list">
+<<<<<<< HEAD
     {% for aspect_hash in site.data.aspects %}
     {% assign aspect = aspect_hash[1] %}
       <li> <a name="{{ aspect.id }}"></a>
@@ -73,6 +99,67 @@ permalink: /Details/
       </li>
 
     {% endfor %}
+=======
+  	 {% for current_aspect in aspects_sorted order:ascending %}
+	    {% for aspect_hash in site.data.aspects  %}
+	    {% assign aspect = aspect_hash[1] %}
+	     {% if aspect.file == current_aspect %}
+	      <li> <a name="{{ aspect.id }}"></a>
+	        <h1>
+	          {{ aspect.id }} {{ aspect.title }}
+	        <div class="contribution-links">
+	        		<a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/aspect/{{ aspect.file }}.yml">Edit</a>
+					| <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/aspect/{{ aspect.file }}.yml">History</a>
+					| <a href="https://github.com/CryptoConsortium/CCSS/issues/new?body=Source%20File%3A%20{{ aspect.file }}%0A%0A">Discuss</a>
+					| <a href="#top">Top</a>
+				</div> 
+				</h1>
+	        	      
+				{{ aspect.description }}
+	        <p>
+	        	<h3> Aspect Components Include </h3>
+	        	<ul class="component-list">
+	        		{% for part in aspect.components %} 
+						<li>{{part.id}} {{ part.title_short }}</li>
+					{% endfor %} 
+					
+	        	</ul>
+	        </p>
+	        
+	        <p>
+	        <ul class="post-list">
+				<li> 
+					<h2> <img class='level' src='/CCSS/images/Level1.jpg'/> </h2>
+					<ul class="level-list">
+					{% for part in aspect.level_one %} 
+						<li>{{ part }}</li>
+					{% endfor %} 
+					</ul>
+				</li>
+				<li> 
+					<h2> <img class='level' src='/CCSS/images/Level2.jpg'/> </h2>
+					<ul class="level-list">
+					{% for part in aspect.level_two %} 
+						<li>{{ part }}</li>
+					{% endfor %} 
+					</ul>
+				</li>
+				<li> 
+					<h2> <img class='level' src='/CCSS/images/Level3.jpg'/> </h2>
+					<ul class="level-list">
+					{% for part in aspect.level_three %} 
+						<li>{{ part }}</li>
+					{% endfor %} 
+					</ul>
+				</li>
+	
+			</ul>
+	        <p>
+	      </li>
+		  {% endif %} 
+	    {% endfor %}
+	  {% endfor %}
+>>>>>>> gh-pages
   </ul>
 
   <h1 class="page-heading">Definitions </h1>

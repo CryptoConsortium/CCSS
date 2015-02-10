@@ -5,8 +5,13 @@ description: > # this means to ignore newlines until "baseurl:"
   The CryptoCurrency Certification Consortium (C4) establishes cryptocurrency 
   standards that help ensure a balance of openness &amp; privacy, security &amp; 
   usability, and trust & decentralization.
+<<<<<<< HEAD
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
+=======
+baseurl: "/CCSS" # the subpath of your site, e.g. /blog/
+url: "https://cryptoconsortium.github.io" # the base hostname & protocol for your site
+>>>>>>> gh-pages
 twitter_username: _CFour_
 github_username:  cryptoconsortium
 logo: CCSS Logo.png
