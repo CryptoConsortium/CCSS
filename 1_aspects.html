@@ -20,7 +20,7 @@ permalink: /Details/
   <ul class="aspect-list" name="top">
 	  
 	  
-	 {% for current_aspect in aspects_sorted %}
+	 {% for current_aspect in aspects_sorted order:ascending %}
 	  {% for aspect_hash in site.data.aspects  %}
 	  
   	  	{% assign aspect = aspect_hash[1] %}
