@@ -1,0 +1,41 @@
+###################################################
+#
+#  CryptoCurrency Security Standard (CCSS)
+#
+#  Copyright (c) 2015, CryptoCurrency Certification Consortium (C4)
+# 
+###################################################
+
+id: 2.04
+title: Audit Logs
+filepath: aspects/2.04 - Audit Logs.yml
+
+category: Operations
+
+description: >
+  This aspect covers the information system’s maintenance of audit logs that provide a record of all changes to information throughout the system. In the event of unexpected behaviour or security incidents, audit logs are an extremely valuable tool that can help investigators understand how the unexpected symptoms occurred and how to resolve the inconsistencies to return the information system to a consistent state. The maintenance of audit logs significantly reduce the risks associated with operational awareness and increase the information system’s ability to correct any inaccuracies.
+
+level_one:
+  - Audit trails exist for a subset of actions that are performed within the information system. Examples of this would include recording audit information of all withdrawals and deposits made with the system. 
+
+level_two:
+  - All actions by all users are logged. These records provide significant assistance to investigations into unexpected behaviour of the information system and can help identify malicious actors and responsible systems or persons.
+
+level_three:
+  - In addition to recording all actions performed within the system, this audit information is regularly backed up to a separate server. This act helps preserve valuable investigative information in the event the audit log is altered/destroyed during an attack on the information system. 
+
+components:
+  - component: &020401
+    id: 2.4.1
+    title_short: Application Audit Logs
+    uncertified: No audit logs
+    level_one: Audit logs exist for some actions within the system
+    level_two: Full audit trail exists of all user/admin actions
+    level_three: Full audit trail exists of all user/admin actions
+  - component: &020402
+    id: 2.4.2
+    title_short: Backup of Audit Logs
+    uncertified: 
+    level_one: 
+    level_two: 
+    level_three: Backups of audit data are performed regularly

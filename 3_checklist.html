@@ -1,0 +1,82 @@
+---
+layout: default
+title: Checklist
+permalink: /Checklist/
+---
+
+{% assign aspect_count = "0 28 9" | split: ' ' %}		  	
+{% assign category_count = 0 %}
+
+<div class="home">
+
+
+  <ul class="checklist">
+  
+  <table>
+  <colgroup>
+    <col style="width:100px">
+    <col style="width:150px">
+    <col style="width:300px">
+    <col style="width:300px">
+    <col style="width:300px">
+    <col style="width:300px">
+  </colgroup>
+	<thead>
+		<tr>
+			<th id='header_category'>Category</th>
+			<th id='header_aspect'>Aspect</th>
+			<th id='header_component'>Component</th>
+			<th id='header_level_i'><img src="/images/Level1.jpg" alt="Level I" width="250"/></th>
+			<th id='header_level_ii'><img src="/images/Level2.jpg" alt="Level II" width="250"/></th>
+			<th id='header_level_iii'><img src="/images/Level3.jpg" alt="Level III" width="250"/></th>
+		</tr>
+	</thead>
+	<tbody>
+    {% for aspect_hash in site.data.aspects %}
+    {% assign aspect = aspect_hash[1] %}
+    	<tr>
+    		{% assign rower = false %}
+    	    	
+	     	{% if category != aspect.category %}
+		  	  	{% assign category = aspect.category %}
+		  	  	{% assign category_count = category_count | plus: 1 %}
+		  	
+		  		<td rowspan={{ aspect_count[category_count] }}>{{category}}</li>  	
+		
+		  	{% endif %}
+		  	
+		  	
+		  	{% assign component_count = 0 %}
+			{% for part in aspect.components %}
+				{% assign component_count = component_count | plus: 1 %}
+			{% endfor %} 
+
+	         <td rowspan={{ component_count }}>{{ aspect.title }}</td>
+	         
+
+			
+	        {% for part in aspect.components %}
+	        	{% if rower %}
+					<tr>
+				{% endif %}
+				<td>{{ part.title_short }}</td>
+		
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			{% assign rower = true %}
+			{% endfor %} 
+
+		</tr>	
+    {% endfor %}	
+	</tbody>
+  </table>
+	
+
+  </ul>
+
+
+
+</div>
+
