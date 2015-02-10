@@ -12,7 +12,7 @@ CCSS covers a list of 10 security aspects of an information system that stores, 
 
 These 10 aspects are organized into 2 domains that help structure the guidelines. A summary of the standard can be seen in the below example which depicts sample results after auditing a "Level I" system. You'll note that even though there are some aspects with scores in the Level II and Level III range, the system is a Level I system since that is the lowest consistent grade across all aspects:
  
-![img](/images/CCSS Matrix.png)
+![img](/CCSS/images/CCSS Matrix.png)
 
 # Levels
 
