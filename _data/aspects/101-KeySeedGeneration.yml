@@ -9,8 +9,7 @@
 
 id: 1.01
 title: Key / Seed Generation
-filepath: aspects/1.01 - Key Seed Generation.yml
-sort: a
+file: 101-KeySeedGeneration
 
 
 category: Cryptographic Asset Management

@@ -8,7 +8,7 @@
 
 id: 1.05
 title: Key Compromise Policy (KCP)
-filepath: aspects/1.05 - Key Compromise Policy.yml
+file: 105-KeyCompromisePolicy
 
 category: Cryptographic Asset Management
 
