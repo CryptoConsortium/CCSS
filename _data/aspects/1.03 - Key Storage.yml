@@ -1,0 +1,86 @@
+###################################################
+#
+#  CryptoCurrency Security Standard (CCSS)
+#
+#  Copyright (c) 2015, CryptoCurrency Certification Consortium (C4)
+# 
+###################################################
+
+id: 1.03
+title: Key Storage
+filepath: aspects/1.03 - Key Storage.yml
+
+category: Cryptographic Asset Management
+
+description: >
+  This aspect covers how cryptographic private keys and seeds are stored when not being used. To maximize the confidentiality of keys/seeds, they should be stored in as secure a manner as the business will allow and make use of strategies such as encryption, secret sharing, and physical locks where appropriate. To maximize the integrity of keys/seeds, backups should exist that allow the keys/seeds to be recovered in the event the primary keys become inaccessible. Care should be taken to ensure that backups are stored with at least as much security as the primary keys, if not more. 
+
+level_one:
+  - Cryptographic keys and/or seeds must be stored with the use of strong encryption when not in use. Strong encryption is defined as using an industry-standard encryption algorithm with an encryption key that would take the estimated global combined computing power 1,000x more time to brute force than the expected life of the key or seed. An example of an encryption algorithm that would provide the necessary level of security at the time of this writing (and potentially for the next few decades barring the discovery of a new attack vector) is AES-256.
+  - A backup of the cryptographic key/seed must exist. The backup can take any form (paper, digital, etc.).
+  - The backup must be protected against environmental risks such as fire, flood, and other acts of God. While the specific mechanisms of environmental protection may change depending on the type of medium used for backup, in general, common methods to achieve this include a water-tight bag for flood protection and a safe or firebox for fire protection.
+
+level_two:
+  - A backup must exist for at least as many keys as is required to spend funds. For example, in a 2-of-3 signing setup where any two of three keys are required to spend funds, backups must exist for at least 2 of these keys. In a 5-of-9 setup, backups must exist for at least 5 keys.
+  - The backup key/seed must be stored in a location that is geographically separate from the usage location of the primary key/seed. For example, if you use the primary key at work, the backup key can be stored at home but not at work. Another example includes leaving the backup in escrow with a trusted 3rd party.
+  - The backup must be protected by access controls that prevent unauthorized parties from accessing it. Examples of this include safes, safe deposit boxes, or locked drawers where only the operator holds the key/combination for the lock.
+  - The backup must employ some form of tamper evident mechanism that allows an operator to determine when it has been accessed. A secure method of achieving this involves a serial-numbered tamper-evident bag, however properly sealed paper envelopes with handwritten signatures over the seal could also suffice provided the specific envelopes in use are able to reveal evidence of tampering.
+
+level_three:
+  - Backups of cryptographic keys and/or seeds must be stored with the use of strong encryption when not in use that is at least equal to the security prescribed for cryptographic keys/seeds above. If backups use a less-secure mechanism than the key/seed itself, the system should not be certified as Level III
+  - Backups are resistant to electromagnetic pulses that could induce currents in electronics and damage the data stored within. A common methodology to secure against this risk is to store the seed in Extended Key format on paper, wood, metal, or on another non-digital medium, or to place the digital medium within a sealed faraday bag designed to protect contents from electro-magnetic interference.
+
+
+components:
+  - component: &010301
+    id: 1.3.1
+    title_short: Primary keys are stored encrypted
+    uncertified: Keys/seeds are stored in plain text
+    level_one: Key/seed is stored with strong encryption
+    level_two: Key/seed is stored with strong encryption
+    level_three: Key/seed is stored with strong encryption
+  - component: &010302
+    id: 1.3.2
+    title_short: Backup key exists
+    uncertified: No key backups exist
+    level_one: Key/seed backup exists
+    level_two: Key/seed backup is stored in a separate location from primary key/seed
+    level_three: Key/seed backup is stored in a separate location from primary key/seed
+  - component: &010303
+    id: 1.3.3
+    title_short: Backup key has environmental protection
+    uncertified: 
+    level_one: Key/seed backup is protected from environmental damage
+    level_two: Key/seed backup is protected from environmental damage
+    level_three: Key/seed backup is protected from environmental damage
+  - component: &010304
+    id: 1.3.4
+    title_short: Backup key is access-controlled
+    uncertified:
+    level_one: 
+    level_two: Key/seed backup is protected by access controls to prevent unauthorized access (i.e. safe/safe deposit box)
+    level_three: Key/seed backup is protected by access controls to prevent unauthorized access (i.e. safe/safe deposit box)
+  - component: &010305
+    id: 1.3.5
+    title_short: Backup key has tamper-evident seal
+    uncertified:
+    level_one:
+    level_two: Key/seed backup employs tamper-evident seal
+    level_three: Key/seed backup employs tamper-evident seal
+  - component: &010306
+    id: 1.3.6
+    title_short: Backup key is encrypted
+    uncertified:
+    level_one:
+    level_two: 
+    level_three: Key/seed backup is stored with strong encryption equal/better than that used to protect primary key
+  - component: &010307
+    id: 1.3.7
+    title_short: Backup key is protected from EMP
+    uncertified:
+    level_one:
+    level_two:
+    level_three: Key/seed backup is resistant to ElectroMagnetic Pulses (EMPs)
+
+
+      
