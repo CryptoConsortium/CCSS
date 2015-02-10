@@ -6,8 +6,8 @@ permalink: /Details/
 <div class="home">
 
   <ul class="aspect-list" name="top">
-  	  {% for aspect_hash in site.data.aspects | sort %}
-  	  	{% assign aspect = aspect_hash[1] %}
+  	  {% for aspect_hash in site.data.aspects %}
+  	  	{% assign aspect = aspect_hash[1] | sort 'id' %}
   	  	{% if category != aspect.category %}
 	  	  	{% assign category = aspect.category %}
 	  		<li>{{category}}</li>  	
