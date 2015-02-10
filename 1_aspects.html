@@ -12,7 +12,7 @@ permalink: /Details/
   <ul class="aspect-list" name="top">
 	  
 	  
-	 {% for current_aspect in aspects_sorted order:ascending %}
+	 {% for current_aspect in aspects_sorted %}
 	  {% for aspect_hash in site.data.aspects  %}
 	  
   	  	{% assign aspect = aspect_hash[1] %}
@@ -85,7 +85,7 @@ permalink: /Details/
 			</ul>
 	        <p>
 	      </li>
-	{% endif %} 
+		  {% endif %} 
 	    {% endfor %}
 	  {% endfor %}
   </ul>
