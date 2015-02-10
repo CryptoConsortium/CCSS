@@ -12,9 +12,9 @@ permalink: /Details/
 {% endfor %}
 
 {% assign aspects_sorted = sorting_string | split: '|' %}	
-{% assign n = 0 %}
 
-{{ aspects_sorted }}
+
+{{ aspects_sorted order:ascending }}
 
 <div class="home">
 
@@ -33,7 +33,7 @@ permalink: /Details/
 		  	  	{% endif %}
 		  	  	<li><a href='#{{aspect.id}}'>{{aspect.id}} {{aspect.title}}  </a></li>
 		{% endif %} 
-  	{% endfor %}
+		{% endfor %}
   	{% endfor %}
   </ul>
   
