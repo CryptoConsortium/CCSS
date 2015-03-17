@@ -4,86 +4,80 @@ title: Matrix
 permalink: /Matrix/
 ---
 
-{% assign aspect_count = "0 28 9" | split: ' ' %}		  	
+{% assign aspect_count = "0 28 9" | split: ' ' %}
 {% assign category_count = 0 %}
 
-{% assign aspects_sorted = '101-KeySeedGeneration|102-WalletCreation|103-KeyStorage|104-KeyUsage|105-KeyCompromisePolicy|106-KeyholderGrantRevokePoliciesAndProcedures|201-SecurityAuditsAndPentests|202-DataSanitizationPolicy|203-ProofOfReserve|204-AuditLogs' | split: '|' %}	
+{% assign aspects_sorted = '101-KeySeedGeneration|102-WalletCreation|103-KeyStorage|104-KeyUsage|105-KeyCompromisePolicy|106-KeyholderGrantRevokePoliciesAndProcedures|201-SecurityAuditsAndPentests|202-DataSanitizationPolicy|203-ProofOfReserve|204-AuditLogs' | split: '|' %}
 
 <div class="home">
 
-
   <ul class="matrix">
-  
+
   <table>
-  <colgroup>
-    <col style="width:100px">
-    <col style="width:150px">
-    <col style="width:300px">
-    <col style="width:300px">
-    <col style="width:300px">
-    <col style="width:300px">
-    <col style="width:300px">
-  </colgroup>
-	<thead>
-		<tr>
-			<th id='header_category'>Category</th>
-			<th id='header_aspect'>Aspect</th>
-			<th id='header_component'>Component</th>
-			<th id='header_uncertifiable'>Uncertified</th> 
-			<th id='header_level_i'><img src="/CCSS/images/Level1.jpg" alt="Level I" width="250"/></th>
-			<th id='header_level_ii'><img src="/CCSS/images/Level2.jpg" alt="Level II" width="250"/></th>
-			<th id='header_level_iii'><img src="/CCSS/images/Level3.jpg" alt="Level III" width="250"/></th>
-		</tr>
-	</thead>
-	<tbody>
-	{% for current_aspect in aspects_sorted %}
-	    {% for aspect_hash in site.data.aspects %}
-	    {% assign aspect = aspect_hash[1] %}
-		    {% if aspect.file == current_aspect %}
-		    	<tr>
-		    		{% assign rower = false %}
-		    	    	
-			     	{% if category != aspect.category %}
-				  	  	{% assign category = aspect.category %}
-				  	  	{% assign category_count = category_count | plus: 1 %}
-				  	
-				  		<td rowspan={{ aspect_count[category_count] }}>{{category}}</li>  	
-				
-				  	{% endif %}
-				  	
-				  	
-				  	{% assign component_count = 0 %}
-					{% for part in aspect.components %}
-						{% assign component_count = component_count | plus: 1 %}
-					{% endfor %} 
-		
-			         <td rowspan={{ component_count }}>{{ aspect.title }}</td>
-			         
-		
-					
-			        {% for part in aspect.components %}
-			        	{% if rower %}
-							<tr>
-						{% endif %}
-						<td>{{ part.title_short }}</td>
-						<td>{{ part.uncertified }}</td>
-						<td>{{ part.level_one}}</td>
-						<td>{{ part.level_two}}</td>
-						<td>{{ part.level_three }}</td>
-					</tr>
-					{% assign rower = true %}
-					{% endfor %} 
-		
-				</tr>	
-			{% endif %}
-	    {% endfor %}	
-	  {% endfor %}	
-	</tbody>
+    <colgroup>
+      <col style="width:100px">
+      <col style="width:150px">
+      <col style="width:300px">
+      <col style="width:300px">
+      <col style="width:300px">
+      <col style="width:300px">
+      <col style="width:300px">
+    </colgroup>
+    <thead>
+      <tr>
+        <th id='header_category'>Category</th>
+        <th id='header_aspect'>Aspect</th>
+        <th id='header_component'>Component</th>
+        <th id='header_uncertifiable'>Uncertified</th>
+        <th id='header_level_i'><img src="/CCSS/images/Level1.jpg" alt="Level I" width="250"/></th>
+        <th id='header_level_ii'><img src="/CCSS/images/Level2.jpg" alt="Level II" width="250"/></th>
+        <th id='header_level_iii'><img src="/CCSS/images/Level3.jpg" alt="Level III" width="250"/></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for current_aspect in aspects_sorted %}
+        {% for aspect_hash in site.data.aspects %}
+          {% assign aspect = aspect_hash[1] %}
+          {% if aspect.file == current_aspect %}
+            <tr>
+              {% assign rower = false %}
+
+              {% if category != aspect.category %}
+                {% assign category = aspect.category %}
+                {% assign category_count = category_count | plus: 1 %}
+
+                <td rowspan={{ aspect_count[category_count] }}>{{category}}</li>
+
+              {% endif %}
+
+
+              {% assign component_count = 0 %}
+              {% for part in aspect.components %}
+                {% assign component_count = component_count | plus: 1 %}
+              {% endfor %}
+
+              <td rowspan={{ component_count }}>{{ aspect.title }}</td>
+
+              {% for part in aspect.components %}
+                {% if rower %}
+                  <tr>
+                {% endif %}
+                <td>{{ part.title_short }}</td>
+                <td>{{ part.uncertified }}</td>
+                <td>{{ part.level_one}}</td>
+                <td>{{ part.level_two}}</td>
+                <td>{{ part.level_three }}</td>
+                </tr>
+                {% assign rower = true %}
+              {% endfor %}
+
+            </tr>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </tbody>
   </table>
-	
 
   </ul>
-
-
 
 </div>

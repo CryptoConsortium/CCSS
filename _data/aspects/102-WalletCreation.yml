@@ -3,7 +3,7 @@
 #  CryptoCurrency Security Standard (CCSS)
 #
 #  Copyright (c) 2015, CryptoCurrency Certification Consortium (C4)
-# 
+#
 ###################################################
 
 id: 1.02
@@ -71,7 +71,5 @@ components:
     title_short: Organizational distribution of keys
     uncertified:
     level_one:
-    level_two: 
+    level_two:
     level_three: Keys are distributed across multiple organizational entities
-
-      

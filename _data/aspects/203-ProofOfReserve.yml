@@ -3,7 +3,7 @@
 #  CryptoCurrency Security Standard (CCSS)
 #
 #  Copyright (c) 2015, CryptoCurrency Certification Consortium (C4)
-# 
+#
 ###################################################
 
 id: 2.03
@@ -16,13 +16,13 @@ description: >
   This aspect covers the proof of control of all funds that should be held by the information system. There have been known cases where information systems that should be operating with a full reserve of user funds have been operating with a fraction of that reserve instead leading to an inability of the system to cover simultaneous withdrawals by all users. These proofs of reserve provide assurance to the public that all funds are available to the system which eliminates the risks of fund loss.
 
 level_one:
-  - An audit has been completed and published online that proves full control of all funds held by the information system. The audit has been signed by an independent party that attests to the accuracy of the audit at the time it was performed which reduces the risks associated with inaccurate or misleading reports. 
+  - An audit has been completed and published online that proves full control of all funds held by the information system. The audit has been signed by an independent party that attests to the accuracy of the audit at the time it was performed which reduces the risks associated with inaccurate or misleading reports.
 
 level_two:
   - The organization conducts regularly-scheduled proof of reserve audits that provide proof that the organization continues to operate on a full reserve and that all user funds are accessible at the time each audit is completed.
 
 level_three:
-  - The information system is designed in such a way that an independent audit is not necessary to prove complete accessibility of user funds. The information system makes use of public ledgers such as blockchains themselves to make this information available to the public allowing anyone to conduct an audit independently. 
+  - The information system is designed in such a way that an independent audit is not necessary to prove complete accessibility of user funds. The information system makes use of public ledgers such as blockchains themselves to make this information available to the public allowing anyone to conduct an audit independently.
 
 components:
   - component: &020301

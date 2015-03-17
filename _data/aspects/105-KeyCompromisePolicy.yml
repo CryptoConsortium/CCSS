@@ -3,7 +3,7 @@
 #  CryptoCurrency Security Standard (CCSS)
 #
 #  Copyright (c) 2015, CryptoCurrency Certification Consortium (C4)
-# 
+#
 ###################################################
 
 id: 1.05
@@ -13,16 +13,16 @@ file: 105-KeyCompromisePolicy
 category: Cryptographic Asset Management
 
 description: >
-  This aspect covers the existence and use of a policy that dictates the actions that must be taken in the event a cryptographic key/seed or its operator/holder is believed to have become compromised. Organizations must be prepared to deal with a situation where a private key has –  even potentially –  become known, determinable or destroyed. Proper policies and procedures to govern these events decrease the risks associated with lost funds and disclosed trade secrets, and increase the availability of the information system to its users. As a critical aspect, the lack of a KCP will prevent an organization from achieving Level III certification. 
+  This aspect covers the existence and use of a policy that dictates the actions that must be taken in the event a cryptographic key/seed or its operator/holder is believed to have become compromised. Organizations must be prepared to deal with a situation where a private key has –  even potentially –  become known, determinable or destroyed. Proper policies and procedures to govern these events decrease the risks associated with lost funds and disclosed trade secrets, and increase the availability of the information system to its users. As a critical aspect, the lack of a KCP will prevent an organization from achieving Level III certification.
 
 level_one:
-  - An inventory of all keys/seeds exists, and awareness of which keys are critical to the successful operation of the information system exists within the organization. While no formal KCP documents exist, there are staff members who are able to direct operators in the procedures necessary to regenerate cryptographic keys, regenerate cryptocurrency wallets, and send funds to these newly-generated wallets in the event any operator or their keys become compromised. 
+  - An inventory of all keys/seeds exists, and awareness of which keys are critical to the successful operation of the information system exists within the organization. While no formal KCP documents exist, there are staff members who are able to direct operators in the procedures necessary to regenerate cryptographic keys, regenerate cryptocurrency wallets, and send funds to these newly-generated wallets in the event any operator or their keys become compromised.
 
 level_two:
   - A proper Key Compromise Policy outlines each specific class of key used throughout the system along with a detailed plan of dealing with its compromise. The plan identifies actors via roles and not names and includes secondary actors in the event any primary actor is unavailable to carry out the KCP.
 
 level_three:
-  - Tests of the Key Compromise Policy are executed regularly to confirm the viability of the procedures and to ensure staff remain trained to use them in the case of a compromise. Improvements identified during the tests are written back into the policy to ensure the most effective and efficient policy is always maintained. As changes are made to the information system, the Key Compromise Policy is revisited to assure it is updated with any new class of key. 
+  - Tests of the Key Compromise Policy are executed regularly to confirm the viability of the procedures and to ensure staff remain trained to use them in the case of a compromise. Improvements identified during the tests are written back into the policy to ensure the most effective and efficient policy is always maintained. As changes are made to the information system, the Key Compromise Policy is revisited to assure it is updated with any new class of key.
 
 components:
   - component: &010501
@@ -35,7 +35,7 @@ components:
   - component: &010502
     id: 1.5.2
     title_short: KCP Training + Rehearsals
-    uncertified: 
-    level_one: 
-    level_two: 
+    uncertified:
+    level_one:
+    level_two:
     level_three: Regular training is provided to keyholders to ensure they are prepared to invoke the policy when required.
