@@ -28,7 +28,7 @@ level_two:
   - The backup must employ some form of tamper evident mechanism that allows an operator to determine when it has been accessed. A secure method of achieving this involves a serial-numbered tamper-evident bag, however properly sealed paper envelopes with handwritten signatures over the seal could also suffice provided the specific envelopes in use are able to reveal evidence of tampering.
 
 level_three:
-  - Backups of cryptographic keys and/or seeds must be stored with the use of strong encryption when not in use that is at least equal to the security prescribed for cryptographic keys/seeds above. If backups use a less-secure mechanism than the key/seed itself, the system should not be certified as Level III
+  - Backups of cryptographic keys and/or seeds must be stored with the use of strong encryption when not in use that is at least equal to the security prescribed for cryptographic keys/seeds above. If backups use a less-secure mechanism than the key/seed itself, the system should not be certified as Level III.
   - Backups are resistant to electromagnetic pulses that could induce currents in electronics and damage the data stored within. A common methodology to secure against this risk is to store the seed in Extended Key format on paper, wood, metal, or on another non-digital medium, or to place the digital medium within a sealed faraday bag designed to protect contents from electro-magnetic interference.
 
 
