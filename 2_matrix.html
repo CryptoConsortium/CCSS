@@ -36,44 +36,34 @@ permalink: /Matrix/
     </thead>
     <tbody>
       {% for current_aspect in aspects_sorted %}
-        {% for aspect_hash in site.data.aspects %}
-          {% assign aspect = aspect_hash[1] %}
-          {% if aspect.file == current_aspect %}
-            <tr>
-              {% assign rower = false %}
+        {% assign aspect = site.data.aspects[current_aspect] %}
+        <tr>
+          {% assign rower = false %}
 
-              {% if category != aspect.category %}
-                {% assign category = aspect.category %}
-                {% assign category_count = category_count | plus: 1 %}
+          {% if category != aspect.category %}
+            {% assign category = aspect.category %}
+            {% assign category_count = category_count | plus: 1 %}
 
-                <td rowspan={{ aspect_count[category_count] }}>{{category}}</li>
+            <td rowspan={{ aspect_count[category_count] }}>{{category}}</li>
 
-              {% endif %}
-
-
-              {% assign component_count = 0 %}
-              {% for part in aspect.components %}
-                {% assign component_count = component_count | plus: 1 %}
-              {% endfor %}
-
-              <td rowspan={{ component_count }}>{{ aspect.title }}</td>
-
-              {% for part in aspect.components %}
-                {% if rower %}
-                  <tr>
-                {% endif %}
-                <td>{{ part.title_short }}</td>
-                <td>{{ part.uncertified }}</td>
-                <td>{{ part.level_one}}</td>
-                <td>{{ part.level_two}}</td>
-                <td>{{ part.level_three }}</td>
-                </tr>
-                {% assign rower = true %}
-              {% endfor %}
-
-            </tr>
           {% endif %}
-        {% endfor %}
+
+          <td rowspan={{ aspect.components.size }}>{{ aspect.title }}</td>
+
+          {% for part in aspect.components %}
+            {% if rower %}
+              <tr>
+            {% endif %}
+            <td>{{ part.title_short }}</td>
+            <td>{{ part.uncertified }}</td>
+            <td>{{ part.level_one}}</td>
+            <td>{{ part.level_two}}</td>
+            <td>{{ part.level_three }}</td>
+            </tr>
+            {% assign rower = true %}
+          {% endfor %}
+
+        </tr>
       {% endfor %}
     </tbody>
   </table>
