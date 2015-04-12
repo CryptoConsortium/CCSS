@@ -1,4 +1,6 @@
 
-word: Key Compromise Policy
+id: key-compromise-policy
+file: KeyCompromisePolicy
+term: Key Compromise Policy
 description: >
   A document that outlines what actions are to be taken in the event that a key may have been compromised.

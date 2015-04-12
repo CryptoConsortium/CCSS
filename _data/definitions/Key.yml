@@ -1,0 +1,6 @@
+
+id: key
+term: Key
+file: Key
+description: >
+  A cryptographic key.

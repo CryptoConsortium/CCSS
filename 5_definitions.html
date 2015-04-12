@@ -23,18 +23,3 @@ permalink: /Definitions/
   {% endfor %}
   </ul>
 </div>
-
-
-
-  <ul class="post-list">
-    {% for definitions_hash in site.data.definitions %}
-      {% assign definition = definitions_hash[1] %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ definition.word }}</a>
-        </h2>
-        {{ definition.description }}
-      </li>
-
-    {% endfor %}
-  </ul>

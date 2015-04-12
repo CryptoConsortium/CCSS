@@ -1,4 +1,6 @@
 
-word: Actor
+id: actor
+term: Actor
+file: Actor
 description: >
   A person, organization or service.
