@@ -1,0 +1,6 @@
+
+id: entropy
+file: Entropy
+term: Entropy
+description: >
+  Randomness usually collected from hardware, environmental factors (time of execution), or external sources (user-input). [Wikipedia](https://en.wikipedia.org/wiki/Entropy_%28computing%29)

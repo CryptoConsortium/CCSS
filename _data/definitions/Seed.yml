@@ -1,0 +1,6 @@
+
+id: seed
+file: Seed
+term: Seed
+description: >
+  A slice of [entropy](#entropy) typically used to initialize a [PRNG](#prng) or [DRBG](#drbg).

@@ -3,4 +3,4 @@ id: actor
 term: Actor
 file: Actor
 description: >
-  A person, organization or service.
+  A person, organization, system, or service that (for the purposes of this specification) makes direct use of a cryptographic [key](#key) or [seed](#seed) is an actor in the context of that key or seed.
