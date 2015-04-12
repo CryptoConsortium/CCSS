@@ -19,7 +19,7 @@ permalink: /Details/
         {% assign category = aspect.category %}
           <li>{{category}}</li>
       {% endif %}
-      <li><a href='#{{aspect.id}}'>{{aspect.id}} {{aspect.title}}  </a></li>
+      <li><a href='#{{aspect.id}}'>{{aspect.id}} {{aspect.title}}</a></li>
 
     {% endfor %}
   </ul>
@@ -38,7 +38,7 @@ permalink: /Details/
           </div>
         </h1>
 
-        {{ aspect.description }}
+        {{ aspect.description | replace:'](#','](../Definitions#' | markdownify }}
         <p>
           <h3> Aspect Components Include </h3>
           <ul class="component-list">
@@ -55,7 +55,7 @@ permalink: /Details/
               <h2> <img class='level' src='/CCSS/images/Level1.jpg'/> </h2>
               <ul class="level-list">
                 {% for part in aspect.level_one %}
-                  <li>{{ part }}</li>
+                  <li>{{ part | replace:'](#','](../Definitions#' | markdownify }}</li>
                 {% endfor %}
               </ul>
             </li>
@@ -63,7 +63,7 @@ permalink: /Details/
               <h2> <img class='level' src='/CCSS/images/Level2.jpg'/> </h2>
               <ul class="level-list">
                 {% for part in aspect.level_two %}
-                  <li>{{ part }}</li>
+                  <li>{{ part | replace:'](#','](../Definitions#' | markdownify }}</li>
                 {% endfor %}
               </ul>
             </li>
@@ -71,7 +71,7 @@ permalink: /Details/
               <h2> <img class='level' src='/CCSS/images/Level3.jpg'/> </h2>
               <ul class="level-list">
                 {% for part in aspect.level_three %}
-                  <li>{{ part }}</li>
+                  <li>{{ part | replace:'](#','](../Definitions#' | markdownify }}</li>
                 {% endfor %}
               </ul>
             </li>
@@ -79,21 +79,6 @@ permalink: /Details/
           </ul>
         </p>
       </li>
-    {% endfor %}
-  </ul>
-
-  <h1 class="page-heading">Definitions </h1>
-
-  <ul class="post-list">
-    {% for definitions_hash in site.data.definitions %}
-      {% assign definition = definitions_hash[1] %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ definition.word }}</a>
-        </h2>
-        {{ definition.description }}
-      </li>
-
     {% endfor %}
   </ul>
 

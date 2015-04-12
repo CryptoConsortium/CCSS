@@ -3,3 +3,38 @@ layout: default
 title: Definitions
 permalink: /Definitions/
 ---
+
+<div class="home">
+  <h1 class="page-heading">Definitions</h1>
+  <ul class="post-list">
+  {% for definitions_hash in site.data.definitions %}
+    {% assign def = definitions_hash[1] %}
+    <li>
+      <h3 id="{{ def.id }}"> {{ def.term }}
+        <div class="contribution-links">
+          <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/definitions/{{ def.file }}.yml">Edit</a>
+          | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/definitions/{{ def.file }}.yml">History</a>
+          | <a href="https://github.com/CryptoConsortium/CCSS/issues/new?body=Source%20File%3A%20{{ definitions/{{ def.file }}%0A%0A">Discuss</a>
+          | <a href="#top">Top</a>
+        </div>
+      </h3>
+      <p>{{ def.description | markdownify }}</p>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+
+
+
+  <ul class="post-list">
+    {% for definitions_hash in site.data.definitions %}
+      {% assign definition = definitions_hash[1] %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ definition.word }}</a>
+        </h2>
+        {{ definition.description }}
+      </li>
+
+    {% endfor %}
+  </ul>
