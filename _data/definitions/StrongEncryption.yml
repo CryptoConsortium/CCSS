@@ -1,0 +1,6 @@
+
+id: strong-encryption
+term: Strong Encryption
+file: StrongEncryption
+description: >
+  A system for [encrypting](https://en.wikipedia.org/wiki/Encryption) data such that the encrypted ciphertext will prove resistant to cryptanalysis for as long as it is essential that the encrypted data remain a secret. [Wikipedia](https://en.wikipedia.org/wiki/Strong_cryptography)
