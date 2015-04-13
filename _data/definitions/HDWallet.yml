@@ -1,0 +1,7 @@
+
+id: hd-wallet
+file: HDWallet
+term: Hierarchical Deterministic Wallet
+description: >
+  A [wallet](#wallet) that uses a cryptographically secure key derivation function (e.g. [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)) to create an arbirtarily large number of unique [addresses](#address) from a single master [seed](#seed). These are beneficial as only the master seed needs to be backed up to protect against loss. Some HD wallet software can also support [multi-signature](#multisig) configurations where multiple master seeds are combined when creating addresses.
+  HD Wallets generally organize addresses into an n-ary tree structure, where each address is associated with a path through the tree. The first HD wallet standard adopted by many applications in the bitcoin community was [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) as proposed by Pieter Wuille. [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) introduced additional functionality allowing sub-paths to be shared without compromising the security of the entire wallet.

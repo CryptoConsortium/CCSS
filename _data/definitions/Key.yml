@@ -3,4 +3,4 @@ id: key
 term: Key
 file: Key
 description: >
-  A cryptographic key.
+  (stub) A cryptographic key is a (usually) secret input to a cryptographic function. [Wikipedia](https://en.wikipedia.org/wiki/Key_%28cryptography%29)
