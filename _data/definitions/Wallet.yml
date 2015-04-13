@@ -10,4 +10,4 @@ description: >
 
   Wallet software can introduce additional complexity, for example by combining multiple keypairs into single addresses, as in the case of a [multi-signature](#multisig) wallet.
 
-  For the purposes of this document, the term 'wallet' refers to some *collection* of cryptocurrency [addresses](#addresses).
+  For the purposes of this document, the term 'wallet' refers to some *collection* of cryptocurrency [addresses](#address).
