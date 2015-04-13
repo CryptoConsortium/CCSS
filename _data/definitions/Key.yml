@@ -3,4 +3,5 @@ id: key
 term: Key
 file: Key
 description: >
-  (stub) A cryptographic key is a (usually) secret input to a cryptographic function. [Wikipedia](https://en.wikipedia.org/wiki/Key_%28cryptography%29)
+  (stub) A cryptographic key is an input to a cryptographic function. [Wikipedia](https://en.wikipedia.org/wiki/Key_%28cryptography%29)
+  In [public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) a public key is used to encrypt data that can only be decrypted using a corresponding private key. Similarly, the private key can be used to generate irreproducible [signatures](#signature) for arbitrary data which the public key can verify.
