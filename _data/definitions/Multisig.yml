@@ -3,4 +3,4 @@ id: multisig
 file: Multisig
 term: Multi-signature
 description: >
-  A common security feature of cryptocurrency [wallet](#wallet) applications is to require multiple signatures from different [keys](#keys) to create a valid transaction.
+  A common security feature of cryptocurrency [wallet](#wallet) applications is to require multiple signatures from different [keys](#key) to create a valid transaction.

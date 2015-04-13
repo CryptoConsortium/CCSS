@@ -1,0 +1,15 @@
+
+id: trusted-environment
+file: TrustedEnvironment
+term: Trusted Environment
+description: >
+  For the purposes of this specification, trusted environments include:  
+    -  machines owned by the organization with appropriate antivirus/anti-malware software installed  
+    -  machines owned by a keyholder  
+    -  other machines upon which the organization permits the use of [keys](#keys)/[seeds](#seeds).
+
+  An organization's trusted environment policy should require hard disk encryption, short screen-lock timeouts, sufficiently [entropic](#entropy) account passwords, and other sensible security measures.  
+
+  Additionally, trusted environments should, where possible, make use of physical access control to prevent "shoulder surfing" of keyboard and screen by unauthorized individuals.  
+
+  Public machines such as those in Internet cafes, libraries, and other public spaces are *not* trusted environments.

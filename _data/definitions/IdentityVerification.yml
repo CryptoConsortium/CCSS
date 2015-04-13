@@ -1,0 +1,10 @@
+
+id: identity-verification
+file: Identity Verification
+term: Identity Verification
+description: >
+  Identity verification is a tiered process by which an organization or system attempts to confirm the authenticity of an [actors'](#actor) claim to be a given individual.
+  Typical methods of identity verification include:  
+  - one or more forms of government-issued identification (driver's license, passport, etc.)  
+  - one or more proofs of residency at the individual's home (utility bills, bank statements, etc.)  
+  - successful completion of challenge questions through a reputable identity-verification service operating in the individual's country of residence (e.g. Equifax)

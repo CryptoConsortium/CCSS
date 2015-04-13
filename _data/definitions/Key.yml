@@ -5,3 +5,4 @@ file: Key
 description: >
   (stub) A cryptographic key is an input to a cryptographic function. [Wikipedia](https://en.wikipedia.org/wiki/Key_%28cryptography%29)
   In [public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) a public key is used to encrypt data that can only be decrypted using a corresponding private key. Similarly, the private key can be used to generate irreproducible [signatures](#signature) for arbitrary data which the public key can verify.
+  In cryptocurrency, a private key may often include additional application-specific information such as bitcoin's [chain code](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#user-content-extended-keys). In such cases, the term key can apply to extended key information OR partial information which might be used to reconstruct a full key as both are sensitive, private information.
