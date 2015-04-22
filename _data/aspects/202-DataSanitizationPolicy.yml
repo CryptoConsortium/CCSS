@@ -3,7 +3,7 @@
 #  CryptoCurrency Security Standard (CCSS)
 #
 #  Copyright (c) 2015, CryptoCurrency Certification Consortium (C4)
-# 
+#
 ###################################################
 
 id: 2.02
@@ -13,16 +13,16 @@ file: 202-DataSanitizationPolicy
 category: Operations
 
 description: >
-  This aspect covers the removal of cryptographic keys from digital media. Due to the manner in which file systems allocate data on digital media, digital forensic techniques can be employed to read old data that has previously been deleted. Proper sanitization of digital media ensures the proper removal of all keys, eliminating the risk of information leakage from decommissioned devices like servers, hard disk drives, and removable storage.
+  This aspect covers the removal of cryptographic [keys](#key) from digital media. Due to the manner in which file systems allocate data on digital media, digital forensic techniques can be employed to read old data that has previously been deleted. Proper sanitization of digital media ensures the proper removal of all keys, eliminating the risk of information leakage from decommissioned devices like servers, hard disk drives, and removable storage.
 
 level_one:
-  - The organization’s staff is aware of how data persists on digital media after deletion. Staff also have access to tools that perform secure deletion of data and understand when to use such tools to permanently destroy any transient copies of cryptographic keys that may be required during the maintenance of the information system. 
+  - The organization's staff is aware of how data persists on digital media after deletion. Staff also have access to tools that perform secure deletion of data and understand when to use such tools to permanently destroy any transient copies of cryptographic [keys](#key) that may be required during the maintenance of the information system.
 
 level_two:
-  - A detailed policy outlining the requirements for sanitization of digital media that holds/held cryptocurrency keys exists and is read/understood by all staff who have access to cryptographic keys. Procedure documents outline where sanitization is required in their processes.
+  - A detailed policy outlining the requirements for sanitization of digital media that holds/held cryptocurrency [keys](#key) exists and is read/understood by all staff who have access to cryptographic keys. Procedure documents outline where sanitization is required in their processes.
 
 level_three:
-  - In addition to the above, an audit trail is maintained for every piece of sanitized media. These audit documents identify the staff member who performed the sanitization, the specific identifiers of the media that was sanitized, which tool and configuration was used to perform the sanitization, and all other relevant pertinent information. 
+  - In addition to the above, an audit trail is maintained for every piece of sanitized media. These audit documents identify the staff member who performed the sanitization, the specific identifiers of the media that was sanitized, which tool and configuration was used to perform the sanitization, and all other relevant pertinent information.
 
 components:
   - component: &020201
@@ -34,8 +34,8 @@ components:
     level_three: Detailed policy covering sanitization requirements, procedures, and validation steps for every media type used by business
   - component: &020202
     id: 2.2.2
-    title_short: Audit Trail of all media sanitization 
-    uncertified: 
-    level_one: 
-    level_two: 
+    title_short: Audit Trail of all media sanitization
+    uncertified:
+    level_one:
+    level_two:
     level_three: Audit trails are maintained for every piece of sanitized media

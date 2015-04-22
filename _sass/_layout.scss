@@ -237,10 +237,10 @@
 
 
 .level { width: 150px;}
-.level-list { 
-	list-style: circle; 
-	list-style-position: outside;
-	
+.level-list {
+    list-style: circle;
+    list-style-position: outside;
+
 }
 
 .aspect-list {
@@ -251,56 +251,56 @@
 }
 
 .component-list {
-	list-style: none;	
+    list-style: none;
 }
 
 .contribution-links {
-	font-size: small;
+    font-size: small;
 }
 
 .logo {
-	padding: 10px;
-	
+    padding: 10px;
+
 }
 
 .org_logo {
-	width:150px;
+    width:150px;
 }
 
 
 
 th {
-	font-weight:bold;
-	font-size: large;
-	height: 10px;
-	border: 1px solid;
-	border-color: rgba(171,171,171,0.09);
-	
-	background-color: #ffa300;
-	color:white;
-	
+    font-weight:bold;
+    font-size: large;
+    height: 10px;
+    border: 1px solid;
+    border-color: rgba(171,171,171,0.09);
+
+    background-color: #ffa300;
+    color:white;
+
 }
 
 table {
-	border-collapse: collapse;
-	table-layout: fixed;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
 
 td {
-	height: 30px;
-	text-align: center;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	//background-color: #003b5c;
-	background-color: #FFFFFF;
-	color: black;
-	
-	//border-bottom-color: black;
-	//border-bottom-style: solid;
-	//border-bottom-width: thin;
-	border: thin black solid;
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    //background-color: #003b5c;
+    background-color: #FFFFFF;
+    color: black;
+
+    //border-bottom-color: black;
+    //border-bottom-style: solid;
+    //border-bottom-width: thin;
+    border: thin black solid;
 }
 
 .matrix {

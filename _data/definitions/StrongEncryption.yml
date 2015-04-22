@@ -1,0 +1,8 @@
+
+id: strong-encryption
+term: Strong Encryption
+file: StrongEncryption
+description: >
+  A system for [encrypting](https://en.wikipedia.org/wiki/Encryption) data using an industry-standard encryption or key derivation algorithm with an encryption key or password *such that* modern cryptanalysis techniques would require the estimated global combined computing power and 1,000x more time than the expected life of the key or seed to decrypt the encrypted data.
+  An example of an encryption algorithm that would provide the necessary level of security at the time of this writing (and potentially for the next few decades barring the discovery of a new attack vector) is AES-256. An example of a password-based key derivation function is [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) as described [BIP 39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
+  [Wikipedia](https://en.wikipedia.org/wiki/Strong_cryptography)

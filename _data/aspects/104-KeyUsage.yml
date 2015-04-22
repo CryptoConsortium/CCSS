@@ -1,9 +1,9 @@
 ###################################################
 #
 #  CryptoCurrency Security Standard (CCSS)
-#  
+#
 #  Copyright (c) 2015, CryptoCurrency Certification Consortium (C4)
-# 
+#
 ###################################################
 
 id: 1.04
@@ -13,31 +13,31 @@ file: 104-KeyUsage
 category: Cryptographic Asset Management
 
 description: >
-  This aspect covers the use of cryptographic keys and/or seeds to ensure they are used in a secure manner that minimizes the risks to the confidentiality of private keys and integrity of funds. This section does not cover the usage of key backups which are only used in the event the primary key is lost/damaged/inaccessible. A variety of risks are present when using keys that can lead to the loss of funds including dirty signature vulnerabilities (i.e. re-used ‘R’ values), opportunity for malware to copy or modify keys, and malicious insiders who use their authorized access to send unauthorized transactions.  
+  This aspect covers the use of cryptographic [keys](#key) and/or [seeds](#seed) to ensure they are used in a secure manner that minimizes the risks to the confidentiality of private keys and integrity of funds. This section does not cover the usage of key backups which are only used in the event the primary key is lost/damaged/inaccessible. A variety of risks are present when using keys that can lead to the loss of funds including dirty signature vulnerabilities (i.e. re-used 'R' values), opportunity for malware to copy or modify keys, and malicious insiders who use their authorized access to send unauthorized transactions.
 
 level_one:
-  - Access to the primary key/seed requires a username, password, and at least 1 (one) other factor of authentication, which restricts access to the authorized operator. This other factor of authentication can take any form provided it identifies the authorized operator. Common forms of supplementary authentication include a Google Authenticator token, a digital signature from a private key, in-person verification by a guard, the possession of a physical key that’s required to access a locked container, or a countersigning organization who can remotely attest to the authenticity of the key holder.
-  - Keys/seeds are only used in trusted environments. This reduces the risks of unauthorized copies being made by malware and key loggers, as well as the risk that the key may remain resident on a machine, allowing it to be recovered by another user. A trusted environment guards against unauthorized persons learning private keys, passwords, or other sensitive information. Trusted environments include a machine owned by the organization with appropriate antivirus/anti-malware software installed, a machine owned by a keyholder, or other machine upon which the organization permits the use of keys/seeds. Furthermore, trusted environments involve minimum forms of access control to prevent “shoulder surfing” of keyboard and screen by unauthorized individuals. Public machines such as those in Internet cafes, libraries, and other public spaces are not trusted environments. 
-  - Key/seed holders have had their references checked prior to being trusted to hold one of the organization’s keys/seeds. This helps ensure the person is being truthful about their past and were not dismissed from prior employment for reasons that would represent a risk to the organization. 
-  - No two keys/seeds of the same wallet are ever present on the same device. Placing two keys of the same wallet on a single device exposes the keys to information leakage by either a malicious operator or malicious software. Ensuring every key of a wallet is used on dedicated devices reduces these risks, thereby increasing security.
-  - Digital signatures must use a ‘k’ value that is never repeated. This can be accomplished through the use of a deterministic random bit generator (DRBG) that is compliant with NIST SP 800-90A, or a deterministic scheme compatible with RFC 6979. Using strong sources of un-repeated numbers is required in order to prevent “dirty signature” vulnerabilities that can allow attackers to recover the private key that was used to compute the signature. A common implementation of this is to use the pseudo-random number generator (PRNG) supplied by popular operating systems, or an RFC 6979-compatible scheme. 
+  - Access to the primary [key](#key)/[seed](#seed) requires an identifier (e.g. username, email, etc.) and at least 2 (two) other [factors of authentication](#authentication-factor), which restricts access to the authorized operator. Examples of additional factors of authentication include Google Authenticator tokens, digital signatures from a private key, in-person ID verification, possession of a physical key or token, or a countersigning organization who can remotely attest to the authenticity of the key holder.
+  - All [keys](#key)/[seeds](#seed) are only used in [trusted environments](#trusted-environment). This somewhat reduces the risk of unauthorized copies being made by malware, as well as mitigating the risk of storing (even inadvertently) a key on a machine, allowing it to be recovered by another user or intruder. An effective trusted environment guards against unauthorized persons learning private keys, passwords, or other sensitive information.
+  - All [key](#key)/[seed](#seed)-holders have had their references checked prior to being trusted to hold one of the organization’s keys/seeds. This helps ensure the person is being truthful about their past and were not dismissed from prior employment for reasons that would represent a risk to the organization.
+  - No two [master keys](#key)/[seeds](#seed) of the same [multi-signature](#multisig) wallet are ever present on the same device. Placing two keys of the same wallet on a single device exposes the keys to information leakage by either a malicious operator or malicious software. Ensuring every key of a wallet is used on dedicated devices reduces these risks, thereby increasing security.
+  - Digital [signatures](#signature) must use a 'k' value that is never repeated. This can be accomplished through the use of a [deterministic random bit generator (DRBG)](#drbg) that is compliant with [NIST SP 800-90A](http://http://csrc.nist.gov/publications/nistpubs/800-90A/SP800-90A.pdf), or a deterministic scheme compatible with [RFC 6979](https://tools.ietf.org/html/rfc6979). Using strong sources of [entropy](#entropy) is required in order to prevent "dirty signature" vulnerabilities that can allow attackers to recover the private key that was used to compute the signature. A common implementation of this is to use the [pseudo-random number generator (PRNG)](#prng) supplied by popular operating systems, or an RFC 6979-compatible scheme.
 
 level_two:
-  - Key/seed holders have undergone identity verification to ensure they are who they say they are. This reduces the risks associated with impersonation and social engineers gaining access to organizational or customer funds. Identities must be verified with at least two forms of government-issued identification (driver’s license, passport, etc.) and two proofs of residency at the person’s home (utility bills, bank statements, etc.).
-  - Verification is performed of fund destinations and amounts prior to key/seed use. This can be performed by humans before using their keys/seeds to ensure they’re sending the right amount of funds to the right addresses/people/companies, or by systems that perform automated signing by checking destination addresses against whitelists and spending limits before the signature is applied. The implementation of payment protocols that provide digitally signed addresses, or the use of systems that display images and business names instead of cryptocurrency addresses greatly simplify this verification process.
+  - All organizational [key](#key)/[seed](#seed)-holders have undergone [identity verification](#identity-verification) to ensure they are who they say they are. This reduces the risks associated with impersonation and social engineering attacks which may result in access to organizational or customer funds.
+  - Verification is performed of fund destinations and amounts prior to [key](#key)/[seed](#seed) use. This can be performed by humans before using their keys/seeds to ensure they’re sending the right amount of funds to the right [addresses](#address)/people/companies, or by systems that perform automated signing by checking destination addresses against whitelists and spending limits before the signature is applied. The implementation of payment protocols that provide [digitally signed](#signature) addresses, or the use of systems that display images and business names instead of cryptocurrency addresses greatly simplify this verification process.
 
 level_three:
-  - Access to the key/seed requires a username, password, and at least 2 other factors of authentication. Similar to the requirement of 1 additional factor in Level I, the other two factors of authentication in Level III can take any form that provides confirmation of an authorized user’s identity. Two factors of authentication in addition to username and password help provide additional security that discovered keys, passwords, or authenticator tokens cannot be used by unauthorized individuals to gain access to organization or user funds.
-  - Key/seed holders have background checks performed by law enforcement personnel or investigative firms. This ensures each key/seed holder is who they say they are and does not have evidence in their past of actions that would represent a risk to the organization if they had signing authority on organization or user funds. 
+  - Access to the [key](#key)/[seed](#seed) requires an identifier (e.g. username, email, etc.) and at least 3 (three) other [factors of authentication](#authentication-factor). Similar to the requirement of 2 additional factors in Level I, the other 3 factors of authentication in Level III can take any form that provides confirmation of an authorized user's identity.
+  - All organizational [key](#key)/[seed](#seed) holders have had background checks performed by law enforcement personnel or investigative firms. This ensures each key/seed holder is who they say they are and does not have evidence in their past of actions that would represent a risk to the organization if they had signing authority on organization or user funds.
 
 components:
   - component: &010401
     id: 1.4.1
     title_short: Key access requires user/pass/nth factor
     uncertified: Access to key/seed does not require sufficient factors of authentication to provide adequate security
-    level_one: Access to key/seed requires username, password, and at least 1 other factor (2FA token, in-person verification by guard, IP address whitelist, physical key to gain access to secured storage, countersigning organization)
-    level_two: Access to key/seed requires username, password, and at least 1 other factor (2FA token, in-person verification by guard, IP address whitelist, physical key to gain access to secured storage, countersigning organization)
-    level_three: Access to key/seed requires username, password, and at least 2 other factors (2FA token, in-person verification by guard, IP address whitelist, physical key to gain access to secured storage, countersigning organization)
+    level_one: Access to key/seed requires an identifier and at least 2 other factors (password, MFA token, in-person verification by guard, IP address whitelist, physical key to gain access to secured storage, countersigning organization)
+    level_two: Access to key/seed requires an identifier and at least 2 other factor (password, MFA token, in-person verification by guard, IP address whitelist, physical key to gain access to secured storage, countersigning organization)
+    level_three: Access to key/seed requires an identifier and at least 3 other factors (password, MFA token, in-person verification by guard, IP address whitelist, physical key to gain access to secured storage, countersigning organization)
   - component: &010402
     id: 1.4.2
     title_short: Keys are only used in a trusted environment
@@ -55,22 +55,22 @@ components:
   - component: &010404
     id: 1.4.4
     title_short: Operator ID checks
-    uncertified: 
-    level_one: 
+    uncertified:
+    level_one:
     level_two: Key/seed holders have identify verified
     level_three: Key/seed holders have identify verified
   - component: &010405
     id: 1.4.5
-    title_short: Operator background checks 
-    uncertified: 
-    level_one: 
-    level_two: 
+    title_short: Operator background checks
+    uncertified:
+    level_one:
+    level_two:
     level_three: Key/seed holders have undergone background checks
   - component: &010406
     id: 1.4.6
     title_short: Spends are verified before signing
-    uncertified: 
-    level_one: 
+    uncertified:
+    level_one:
     level_two: Verification of fund destinations and amounts are performed prior to key usage
     level_three: Verification of fund destinations and amounts are performed prior to key usage
   - component: &010407
@@ -91,7 +91,7 @@ components:
     level_two: >
       The 'k' values in digital signatures are created using a NIST SP 800-90A compliant DRBG
       OR
-      The 'k' values are created deterministically according to RFC 6979 
+      The 'k' values are created deterministically according to RFC 6979
     level_three: >
       The 'k' values in digital signatures are created using a NIST SP 800-90A compliant DRBG
       OR

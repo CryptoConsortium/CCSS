@@ -1,0 +1,7 @@
+
+id: prng
+file: PRNG
+term: Pseudo-Random Number Generator
+description: >
+  An algorithm, program, or system used to produce arbitrary difficult-to-guess values for cryptographic applications. Typically [seeded](#seed) with some source of [entropy](#entropy), PRNGs are used, among other things, to generate [cryptographic keys](#key). Sometimes CSPRNG (Cryptographically Secure PRNG). See related: [DRBG (Deterministic Random Bit Generator)](#drbg).
+  [Wikipedia](https://en.wikipedia.org/wiki/Pseudorandom_number_generator)
