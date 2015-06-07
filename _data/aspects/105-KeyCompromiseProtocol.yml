@@ -1,0 +1,42 @@
+###################################################
+#
+#  CryptoCurrency Security Standard (CCSS)
+#
+#  Copyright (c) 2015, CryptoCurrency Certification Consortium (C4)
+#
+###################################################
+
+id: 1.05
+title: Key Compromise Protocol (KCP)
+file: 105-KeyCompromiseProtocol
+
+category: Cryptographic Asset Management
+
+description: >
+  This aspect covers the existence and use of a [protocol](#key-compromise-protocol) that dictates the actions that must be taken in the event a cryptographic [key](#key)/[seed](#seed) or its [operator/holder](#actor) is believed to have become compromised. Organizations must be prepared to deal with a situation where a private key has –  even potentially –  become known, determinable or destroyed. Proper policies and procedures to govern these events decrease the risks associated with lost funds and disclosed trade secrets, and increase the availability of the information system to its users. The lack of a KCP will prevent an organization from achieving Level III certification.
+  Examples of when a KCP would be invoked include the identification of tampering of a tamper-evident seal placed on key material, the apparent disappearance of an operator whose closest friends and family cannot identify their whereabouts, or the receipt of communication that credibly indicates an operator or key is likely at risk of being compromised.
+
+level_one:
+  - An inventory of all [keys](#key)/[seeds](#seed) exists, and awareness of which keys are critical to the successful operation of the information system exists within the organization. While no formal [KCP](#key-compromise-protocol) documents exist, there are staff members who are able to direct operators in the procedures necessary to regenerate cryptographic keys, regenerate cryptocurrency [wallets](#wallet), and send funds to these newly-generated wallets in the event any operator or keys become compromised.
+
+level_two:
+  - A proper [Key Compromise Protocol](#key-compromise-protocol) outlines each specific class of key used throughout the system along with a detailed plan of dealing with its compromise. The plan identifies actors via roles and not names and includes secondary actors in the event any primary actor is unavailable to carry out the KCP.
+
+level_three:
+  - Tests of the [Key Compromise Protocol](#key-compromise-protocol) are executed regularly to confirm the viability of the procedures and to ensure staff remain trained to use them in the case of a compromise. Logs of executed tests exist which outline any/all comments of the test. Improvements identified during the tests are written back into the protocol to ensure the most effective and efficient protocol is always maintained. As changes are made to the information system, the Key Compromise Protocol is revisited to assure it is updated with any new class of key.
+
+components:
+  - component: &010501
+    id: 1.5.1
+    title_short: KCP Exists
+    uncertified: No staff has the necessary knowledge/experience/training required to rebuild the keys/wallets when necessary
+    level_one: An employee with knowledge/experience with the system is able to direct staff with appropriate tasks to remove the risk of compromise.
+    level_two: A written checklist/procedure document exists that outlines procedures for each actor to carry out in order to remove the risk of compromise. Document is maintained as warranted by changes to the system.
+    level_three: A written checklist/procedure document exists that outlines procedures for each actor to carry out in order to remove the risk of compromise. Document is maintained as warranted by changes to the system.
+  - component: &010502
+    id: 1.5.2
+    title_short: KCP Training + Rehearsals
+    uncertified:
+    level_one:
+    level_two:
+    level_three: Regular training is provided to keyholders to ensure they are prepared to invoke the protocol when required.
