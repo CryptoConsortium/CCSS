@@ -15,6 +15,7 @@ These 10 aspects are organized into 2 domains that help structure the guidelines
 ## Acme Exchange's CCSS Audit Results: ![img](/CCSS/images/CCSS Matrix.png)
 
 # Scope
+
 The CCSS covers controls that increase the security of the cryptocurrency portion of an information system, however it does not cover common standards and practices for increasing the cybersecurity of an information system. For this reason, CCSS should be considered as a separate set of recommendations that are applied overtop standard security practices in other domains including business continuity, disaster recovery, network intrusion prevention, physical security, and vulnerability management.
 
 # Applicability
