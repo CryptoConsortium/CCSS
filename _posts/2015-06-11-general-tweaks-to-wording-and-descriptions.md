@@ -12,9 +12,11 @@ The Key Compromise Policy was renamed Key Compromise Protocol since "Protocol" i
 
 Added some links to the definitions page.
 
+Encorporated multiple suggestions/improvements to the standard that were received by Deloitte.
+
 ### Original Authors 
 
 [C4](https://cryptoconsortium.org) 
 
 * Michael Perklin
-
+* Deloitte
