@@ -13,7 +13,7 @@ file: 106-KeyholderGrantRevokePoliciesAndProcedures
 category: Cryptographic Asset Management
 
 description: >
-  This aspect covers the policies and procedures surrounding granting and revoking access to cryptographic [keys](#key) or [seeds](#seed) that protect organizational or end-user funds. Staff typically have greater access to an information system with respect to accessing its information, invoking privilege-restricted actions, and representing the organization to the public. Improper management of the onboarding and offboarding of personnel introduce risks of privileged accounts remaining when staff depart, as well as unrevoked keys that persist [signing](#signature) authority for certain transactions.
+  This aspect covers the policies and procedures surrounding granting and revoking access to cryptographic [keys](#key) or [seeds](#seed) that store organizational or end-user funds. Staff typically have greater access to an information system with respect to accessing its information, invoking privilege-restricted actions, and representing the organization to the public. Improper management of the onboarding and offboarding of personnel introduce risks of privileged accounts remaining when staff depart, as well as unrevoked keys that persist [signing](#signature) authority for certain transactions.
 
 level_one:
   - An awareness of how roles should be managed when onboarding or offboarding staff from keyholder positions exists within the organization. A staff member who is knowledgeable about the system is able to ensure that permissions are granted/revoked to/from the affected staff appropriately.
