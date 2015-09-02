@@ -23,7 +23,7 @@ level_one:
 
 level_two:
   - The [key](#key) or [seed](#seed) generation methodology is validated prior to use. Software that is used to generate seeds should be free from any features that restrict the generated seed to conform to deterministic values and features that store or transmit the generated seed to another [actor](#actor), except where such features enhance the effective security of the software (e.g. [DRBGs](#drbg)).
-  - After software has been audited, a digital signature should be generated and and published. The signature should be validated prior to each execution to ensure the software has not been altered since it passed its security audit.
+  - After software has been audited, a digital signature should be generated and published. The signature should be validated prior to each execution to ensure the software has not been altered since it passed its security audit.
   - In cases where keys or seeds are created without the use of software (e.g. dice, a deck of cards, or other non-digital source of [entropy](#entropy)), the creation methodology should be validated to ensure determinism is not present (i.e. there are no weighted dice, each card in the deck is unique, etc.).
 
 level_three:
