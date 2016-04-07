@@ -18,8 +18,10 @@ description: >
  This aspect covers the generation of [cryptographic keys](#key) and [seeds](#seed) that will be used within a cryptocurrency system. The secure creation of cryptographic keys and seeds requires two things to be secure: confidentiality and un-guessable numbers. Confidentiality is required to ensure that the newly created keys or seeds are not read/copied by an unintended party. Un-guessable numbers are required to ensure the newly created key cannot be guessed or determined by an unintended party. Each of the goals listed below provide assurance that the keys and/or seeds are created in a confidential and un-guessable manner.
 
 level_one:
-  - The [cryptographic keys](#key) and [seeds](#seed) are created by the [actor](#actor) who will be using it. This is an attempt to protect the confidentiality of the key. Any system that requires one actor to transfer a key or seed to another actor after generating it will fail to achieve Level I.
-  - Notably, transferring a cryptographic secret for backup purposes does not violate the above requirement, however those secrets must be transmitted and stored in a [strongly encrypted](#strong-encryption) format.
+  - The [cryptographic keys](#key) and [seeds](#seed) are created by the [actor](#actor) who will be using it. This is an attempt to protect the confidentiality of the key. Any system that requires one actor to transfer a key or seed to another actor after generating it will fail to achieve Level I, with the exception of the initial configuration of an automated signing agent.
+  - In cases where an automated agent will make use of a cryptographic key/seed, it is recommended that the administrator of that system generate the key/seed on a suitable offline system with sufficient [entropy](#entropy), have this key/seed [transferred securely](#strong-encryption) onto the target device, and then securely deleted using CCSS-compliant data sanitization techniques to protect the confidentiality of the key/seed.
+  - Notably, transferring a cryptographic secret for backup purposes does not violate the &quot;Same Actor&quot; requirement, however those secrets must be transmitted and stored in a [strongly encrypted](#strong-encryption) format.
+  - The [cryptographic keys](#key) and [seeds](#seed) are created on a system with sufficient entropy to ensure the keys are not created with any bias towards a reduced range of values, or other deterministic properties
 
 level_two:
   - The [key](#key) or [seed](#seed) generation methodology is validated prior to use. Software that is used to generate seeds should be free from any features that restrict the generated seed to conform to deterministic values and features that store or transmit the generated seed to another [actor](#actor), except where such features enhance the effective security of the software (e.g. [DRBGs](#drbg)).
@@ -57,3 +59,10 @@ components:
       Key/seed is created using a NIST SP 800-90A compliant DRBG that has been seeded with multiple cryptographically-secure sources of entropy
       OR
       A NRBG that passes industry-standard statistical tests (DIEHARD, Crypt-X, NIST STS)
+  - component: &010104
+    id: 1.1.4
+    title_short: Entropy Pool
+    uncertified: Keys / seeds are created on system with insufficient entropy
+    level_one: Key/seed is created on a system with sufficient entropy
+    level_two: Key/seed is created on a system with sufficient entropy
+    level_three: Key/seed is created on a system with sufficient entropy
