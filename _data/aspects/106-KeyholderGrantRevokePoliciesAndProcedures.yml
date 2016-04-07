@@ -20,6 +20,7 @@ level_one:
 
 level_two:
   - The organization maintains checklists that cover all tasks that must be completed when staff vacate or transition into keyholder roles within the organization. These checklists have been reviewed by knowledgeable personnel to ensure "least privilege principles" are applied to the information system, as well as necessary access where required. This eliminates the risks associated with missed privileges and the possession of un-revoked [keys](#key).
+  - All keyholder grant/revoke requests are conducted over [Authenticated Communication Channels](#authenticated-communication-channel)
 
 level_three:
   - The organization's checklists include auditing information that record the identity of the staff member that performs the grant/revoke operations. Each entry within the audit trail is attested to by the staff member who performed that task.
@@ -30,10 +31,17 @@ components:
     title_short: Grant/Revoke Procedures/Checklist
     uncertified: No Policy/Procedures in place
     level_one: Permission changes for incoming/outgoing staff are performed by someone knowledgeable with the system
-    level_two: A written checklist/procedure document exists that is followed for on/offboarding. The checklist outlines every permission to grant/revoke for every role in the information system
-    level_three: A written checklist/procedure document exists that is followed for on/offboarding. The checklist outlines every permission to grant/revoke for every role in the information system
+    level_two: A written checklist/procedure document exists that is followed for on/offboarding. The checklist outlines every permission to grant/revoke for every role in the information system.
+    level_three: A written checklist/procedure document exists that is followed for on/offboarding. The checklist outlines every permission to grant/revoke for every role in the information system.
   - component: &010602
     id: 1.6.2
+    title_short: Requests made via Authenticated Communication Channel
+    uncertified:
+    level_one:
+    level_two: All grant/revoke requests are made via an Authenticated Communication Channel
+    level_three: All grant/revoke requests are made via an Authenticated Communication Channel
+  - component: &010603
+    id: 1.6.3
     title_short: Grant/Revoke Audit Trail
     uncertified:
     level_one:
