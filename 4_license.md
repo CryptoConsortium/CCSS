@@ -4,7 +4,7 @@ title: License
 permalink: /License/
 ---
 
-Copyright (c) 2015, CryptoCurrency Certification Consortium (C4)
+Copyright (c) 2016, CryptoCurrency Certification Consortium (C4)
 
 Permission to use, copy, modify, and distribute this documentation for any purpose, without fee, and without a written agreement is hereby granted, provided that the above copyright notice and this paragraph and the following two paragraphs appear in all copies.
 

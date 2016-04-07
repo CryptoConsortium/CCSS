@@ -45,7 +45,7 @@ Following the 2016Q1 meeting of the steering committee, a number of proposed cha
 * Andreas M. Antonopoulos (Third Key Solutions)
 * Peter Todd
 * Taulant Ramabaja
-* Jameson Lopp
-* Luke Dash-jr
+* Jameson Lopp (BitGo)
+* Luke Dash-jr (Blockstream)
 * DexX7
-* Bryan Bishop
+* Bryan Bishop (LedgerX)
