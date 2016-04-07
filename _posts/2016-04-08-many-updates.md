@@ -9,7 +9,7 @@ Following the 2016Q1 meeting of the steering committee, a number of proposed cha
 
 * EMP and environmental protection of stored keys
 * Entropy pools during key creation
-* A FAQ that lists ancilliary risks that are not directly under the scope of CCSS (i.e. fork handling, dust transaction handling, etc.)
+* A Caveat section that lists ancilliary risks that are not directly under the scope of CCSS (i.e. fork handling, dust transaction handling, etc.)
 * Authenticated communication channels
 
 ### Contributors
