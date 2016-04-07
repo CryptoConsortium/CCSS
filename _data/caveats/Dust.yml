@@ -1,0 +1,6 @@
+
+id: dust
+term: Dust Transactions
+file: Dust
+description: >
+  It has become common for some users of a blockchain-based system to send very low quantities of blockchain tokens (often called "dust") to addresses for a variety of reasons. Depending on how your information system is designed, large quantities of these very small transactions could cause a Denial of Service attack if your system performs significant amounts of processing on all incoming transactions. Alternatively, accounting inconsistencies can result from ignoring these small transactions. Those who design or implement blockchain-based systems should keep these two competing tradeoffs in mind when deciding how the system should carry out the business rules it was designed to perform.

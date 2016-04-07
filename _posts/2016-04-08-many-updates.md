@@ -49,3 +49,4 @@ Following the 2016Q1 meeting of the steering committee, a number of proposed cha
 * Luke Dash-jr (Blockstream)
 * DexX7
 * Bryan Bishop (LedgerX)
+* Nick Johnston
