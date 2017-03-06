@@ -47,8 +47,8 @@ An information system that has achieved Level III security has proven by way of 
 
 # This Repository
 
-This repository is meant to operate as a collaborative document. Wherever possible, the details of the standard have been separated from the design elements to allow for both to easily evolve independantly. Your contribution to either is encouraged. 
+This repository is meant to operate as a collaborative document. Wherever possible, the details of the standard have been separated from the design elements to allow for both to easily evolve independently. Your contribution to either is encouraged.
 
 See the _data directory for discussion on the standard.
 
-See the Jekyll project for more information regarding the structure/design of this static site. 
+See the Jekyll project for more information regarding the structure/design of this static site.
