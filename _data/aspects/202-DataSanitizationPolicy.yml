@@ -10,7 +10,7 @@ id: 2.02
 title: Data Sanitization Policy (DSP)
 file: 202-DataSanitizationPolicy
 
-category: Operations
+category: オペレーション
 
 description: >
   This aspect covers the removal of cryptographic [keys](#key) from digital media. Due to the manner in which file systems allocate data on digital media, digital forensic techniques can be employed to read old data that has previously been deleted. Proper sanitization of digital media ensures the proper removal of all keys, eliminating the risk of information leakage from decommissioned devices like servers, hard disk drives, and removable storage.

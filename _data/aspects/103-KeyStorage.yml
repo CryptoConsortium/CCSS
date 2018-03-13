@@ -11,7 +11,7 @@ title: Key Storage
 file: 103-KeyStorage
 
 
-category: Cryptographic Asset Management
+category: 暗号資産管理
 
 description: >
   This aspect covers how cryptographic private [keys](#key) and [seeds](#seed) are stored when not being used. To maximize the confidentiality of key material (i.e. [keys](#key) and [seeds](#seed)), they should be stored in as secure a manner as business concerns will allow and make use of strategies such as encryption, secret sharing, and physical locks where appropriate. To maximize the integrity of keys/seeds, backups should exist that allow the keys/seeds to be recovered in the event the primary keys become inaccessible. Care should be taken to ensure that backups are stored with at least as much security as the primary keys, if not more.

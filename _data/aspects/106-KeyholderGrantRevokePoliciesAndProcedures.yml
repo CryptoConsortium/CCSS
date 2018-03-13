@@ -10,7 +10,7 @@ id: 1.06
 title: Keyholder Grant/Revoke Policies & Procedures
 file: 106-KeyholderGrantRevokePoliciesAndProcedures
 
-category: Cryptographic Asset Management
+category: 暗号資産管理
 
 description: >
   This aspect covers the policies and procedures surrounding granting and revoking access to cryptographic [keys](#key) or [seeds](#seed) that store organizational or end-user funds. Staff typically have greater access to an information system with respect to accessing its information, invoking privilege-restricted actions, and representing the organization to the public. Improper management of the onboarding and offboarding of personnel introduce risks of privileged accounts remaining when staff depart, as well as unrevoked keys that persist [signing](#signature) authority for certain transactions.

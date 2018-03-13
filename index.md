@@ -2,53 +2,61 @@
 layout: default
 ---
 
-CryptoCurrency Security Standard (CCSS) is a set of requirements for all information systems that make use of cryptocurrencies, including exchanges, web applications, and cryptocurrency storage solutions. By standardizing the techniques and methodologies used by systems around the globe, end-users will be able to easily make educated decisions about which products and services to use and with which companies they wish to align.
+暗号通貨*セキュリティ標準 (CCSS) は、取引所、Webアプリケーション、暗号通貨ストレージソリューションなどを含む、暗号通貨を利用するすべての情報システムに対する一連の要件です。 世界中のシステムで使用されている技術や方法論を標準化することにより、エンドユーザーはどの製品やサービスを使用するのか、どの企業選ぶべきか容易に判断することができます。
 
-CCSS is designed to complement existing information security standards (i.e. ISO 27001:2013) by introducing guidance for security best practices with respect to cryptocurrencies such as Bitcoin. CCSS is not designed to substitute or replace these standards; in fact, following the CCSS to the letter while ignoring standards like ISO 27001:2013 will likely lead to compromise. CCSS is a cryptocurrency standard that augments standard information security practices. As with any standard, knowledgeable and experienced security professionals and/or auditors are necessary when implementing any information system to ensure coverage of all classes of attack as well as the appropriate handling of all potential risks.
+CCSSは、Bitcoinなどの暗号通貨に関するセキュリティのベストプラクティスを導入することにより、既存の情報セキュリティ基準（ISO 27001：2013）を補完するように設計されています。CCSSは、これらの基準の替わりまたは置き換えるようには設計されていません。 実際、ISO 27001：2013のような標準を無視しつつ、CCSSだけに厳密に従っていても、おそらく不十分なものになるでしょう。 
+CCSSは、既存の情報セキュリティ標準を補強する暗号通貨の標準要件です。 どのような基準であっても、情報システムを実装する際にはあらゆる種類の攻撃を確実にカバーするために、知識のある経験豊富なセキュリティ専門家やセキュリティ監査により、すべての潜在的リスクを適切に処理する必要があります。
 
-# Overview
+# 全体概要
 
-CCSS covers a list of 10 security aspects of an information system that stores, transacts with, or accepts cryptocurrencies. An information system is a collection of technologies (hardware and/or software), personnel, policies and procedures that work together to provide a secure environment. A security aspect is a discrete technique of securing one piece of an information system. The minimum value of all 10 aspects determines an information system’s overall score within three (3) levels of increasing security: Level I is the lowest and offers strong security measures, while Level III is the highest and offers the most comprehensive security.
+CCSSは、暗号通貨を保管、取引、または受け入れる情報システムのための10のセキュリティ観点を用意しています。 情報システムとは、安全な環境を提供するために動作する一連の技術（ハードウェアおよびソフトウェア）、人員、方針および手順の集まりです。 観点とは、情報システムの一部を保護するための個別の技術です。 10のすべての観点には、情報システムの全体的なスコアを決定する３つのレベルがあります。レベルIIIがもっとも高く、包括的なセキュリティを提供しているのに対し、レベルIが最も低く、それでも強いセキュリティ対策を提供しています。
 
-These 10 aspects are organized into 2 domains that help structure the guidelines. A summary of the standard can be seen in the below example which depicts sample results after auditing Acme Exchange, a "Level I" system. You'll note that even though there are some aspects with scores in the Level II and Level III range, Acme Exchange is classified a Level I system overall since that is the lowest consistent grade across all aspects:
+これらの10の観点は、ガイドラインの構造化に役立つ2つの領域に編成されています。 セキュリティ標準の要約は、「レベルI」システムであるAcme Exchangeを監査した後のサンプル結果を示す下の例に示されています。 いくつかの観点でLevel IIおよびLevel IIIのスコアが満たせていますが、Acme ExchangeはレベルIのシステムに分類されています。それは、すべての観点で満たすことができている一番低いスコアがレベルIだからです。
 
-## Acme Exchange's CCSS Audit Results: ![img](/CCSS/images/CCSS Matrix.png)
+## Acme Exchangeの CCSS監査結果: ![img](/CCSS/images/CCSS Matrix.png)
 
-# Scope
-
-The CCSS covers controls that increase the security of the cryptocurrency portion of an information system, however it does not cover common standards and practices for increasing the cybersecurity of an information system. For this reason, CCSS should be considered as a separate set of recommendations that are applied overtop standard security practices in other domains including business continuity, disaster recovery, network intrusion prevention, physical security, and vulnerability management.
-
-# Applicability
-
-The CCSS applies to any information system that makes use of cryptocurrencies. This includes (but is not limited to):
-* Cryptocurrency Exchanges (i.e. Information Systems that allow its users to exchange cryptocurrencies for other forms of money)
-* Cryptocurrency Marketplaces (i.e. Information Systems that allow its users to exchange cryptocurrencies for other goods and services)
-* Cryptocurrency Games (i.e. Information Systems that allow users to gamble their cryptocurrencies for a chance at winning more)
-* Cryptocurrency Processors (i.e. Information Systems that automate the acceptance of cryptocurrencies for payment)
-* Cryptocurrency Storage (i.e. Information Systems that facilitate the receipt and transmission of cryptocurrencies amongst other actors)
-* Any Information System that handles cryptocurrencies as part of its business logic.
-
-# Levels
-
-CCSS is broken into three (3) levels of increasing security. Details of these are outlined in this section.
-
-## Level I
-
-An information system that has achieved Level I security has proven by way of audit that they protect their information assets with strong levels of security. Most risks to the system’s information assets have been addressed by controls that meet industry guidelines. While this is the lowest level within CCSS, it still represents strong security.
-
-## Level II
-
-An information system that has achieved Level II security has proven by way of audit that they exceed strong levels of security with additional enhanced controls. In addition to covering most risks to the information system’s assets, the use of decentralized security technologies such as multiple signatures have been employed which exceed industry guidelines and provide redundancy if any one key or person becomes unavailable or compromised.
-
-## Level III
-
-An information system that has achieved Level III security has proven by way of audit that they exceed enhanced levels of security with formalized policies and procedures that are enforced at every step within their business processes. Multiple actors are required for all critical actions, advanced authentication mechanisms ensure authenticity of all data, and assets are distributed geographically and organizationally in such a way to be resilient against compromise of any person or organization.
+# スコープ
 
 
-# This Repository
+CCSSは、情報システムの暗号通貨のセキュリティを向上させるコントロールをカバーしますが、情報システムのサイバーセキュリティを向上させるための共通の基準とプラクティスはカバーしません。 このため、CCSSは、他の観点（ビジネス継続性、災害復旧、ネットワーク侵入防御、物理的セキュリティ、脆弱性管理）と同様に、標準のセキュリティプラクティスに追加適用される推奨リストとみなされるべきです。
+
+# 適用範囲
+
+CCSSは、暗号通貨を利用するあらゆる情報システムに適用されます。これには次のものが含まれます（ただしこれに限定されません）。
+*暗号通貨取引所（ユーザが他の形式の通貨と暗号通貨を交換することを可能にする情報システム）
+*暗号通貨マーケットプレイス（ユーザが他の商品やサービスと暗号通貨の交換を可能にする情報システム）
+*暗号通貨ゲーム（ユーザーがより多くの勝利のチャンスを得るために暗号通貨を賭けることを可能にする情報システム）
+*暗号通貨プロセッサ（支払いのための暗号化通貨の受け入れを自動化する情報システム）
+*暗号通貨ストレージ（他のアクター間で暗号通貨の受信および送信を容易にする情報システム）
+*ビジネスロジックの一部として暗号通貨を処理する情報システム。
+
+# レベル
+
+CCSSはセキュリティを強化する3つのレベルに分かれています。 これらの詳細については、このセクションで概説します。
+
+## レベル I
+
+レベル1のセキュリティを達成した情報システムは、監査によって、強力なセキュリティレベルで情報資産を保護することが証明されています。 システムの情報資産に対するほとんどのリスクは、業界のガイドラインを満たすコントロールによって対策されています。 これはCCSSの中で最も低いレベルですが、強力なセキュリティを表しています。
+
+## レベル II
+
+レベル2のセキュリティを達成した情報システムは、強化されたコントロールを備えた強力なセキュリティレベルを超えていることが監査によって証明されています。 情報システムの資産に対するほとんどのリスクをカバーすることに加えて、マルチシグなどの分散セキュリティ技術を使用して、業界のガイドラインを超えて、鍵や人が失われたり利用できなくなった場合にも冗長性を提供しています。
+
+## レベル III
+
+レベル3のセキュリティを達成した情報システムは、ビジネスプロセスのあらゆる段階で実施される正式な管理ポリシーと手順により、高度なセキュリティレベルが監査によって証明されています。 すべての重要なアクションには複数の作業者が必要であり、高度な認証メカニズムによりすべてのデータの真正性が保証され、資産は地理的にも組織的にも分散保管され、人や組織の情報漏洩を防ぎます。
+
+# 訳注
+
+日本では仮想通貨の呼称が一般的に普及していますが、本ドキュメントの性質を鑑み暗号通貨という表現を用いています。また、Exchangeの訳には交換所ではなく取引所を用いています。
+
+# このリポジトリについて
+
+本リポジトリはオリジナルからフォークされました。
 
 This repository is meant to operate as a collaborative document. Wherever possible, the details of the standard have been separated from the design elements to allow for both to easily evolve independently. Your contribution to either is encouraged.
 
 See the _data directory for discussion on the standard.
 
 See the Jekyll project for more information regarding the structure/design of this static site.
+

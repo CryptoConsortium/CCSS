@@ -8,15 +8,15 @@
 ###################################################
 
 id: 1.01
-title: Key / Seed Generation
+title: 鍵／シードの生成
 file: 101-KeySeedGeneration
 
 
-category: Cryptographic Asset Management
+category: 暗号資産管理
 
 description: >
- This aspect covers the generation of [cryptographic keys](#key) and [seeds](#seed) that will be used within a cryptocurrency system. The secure creation of cryptographic keys and seeds requires two things to be secure: confidentiality and un-guessable numbers. Confidentiality is required to ensure that the newly created keys or seeds are not read/copied by an unintended party. Un-guessable numbers are required to ensure the newly created key cannot be guessed or determined by an unintended party. Each of the goals listed below provide assurance that the keys and/or seeds are created in a confidential and un-guessable manner.
-
+ この観点は、暗号通貨システム内で使用される[暗号鍵]（＃key）と[シード（＃seed）]の生成を対象としています。 暗号鍵とシードを安全に作成するには、機密性と推測できない数の2つが必要です。 新しく作成された暗号鍵またはシードが意図しない者によって読み取られたりコピーされたりしないようにするには、機密性が必要です。 新たに作成された暗号鍵が意図しない当事者によって推測または特定されないようにするには、推測できない数が必要です。 以下にリストされた各ゴールは、暗号鍵やシードが機密で推測不能な方法で作成されるという保証を提供します。
+ 
 level_one:
   - The [cryptographic keys](#key) and [seeds](#seed) are created by the [actor](#actor) who will be using it. This is an attempt to protect the confidentiality of the key. Any system that requires one actor to transfer a key or seed to another actor after generating it will fail to achieve Level I, with the exception of the initial configuration of an automated signing agent.
   - In cases where an automated agent will make use of a cryptographic key/seed, it is recommended that the administrator of that system generate the key/seed on a suitable offline system with sufficient [entropy](#entropy), have this key/seed [transferred securely](#strong-encryption) onto the target device, and then securely deleted using CCSS-compliant data sanitization techniques to protect the confidentiality of the key/seed.

@@ -10,7 +10,7 @@ id: 1.05
 title: Key Compromise Protocol (KCP)
 file: 105-KeyCompromiseProtocol
 
-category: Cryptographic Asset Management
+category: 暗号資産管理
 
 description: >
   This aspect covers the existence and use of a [protocol](#key-compromise-protocol) that dictates the actions that must be taken in the event a cryptographic [key](#key)/[seed](#seed) or its [operator/holder](#actor) is believed to have become compromised. Organizations must be prepared to deal with a situation where a private key has –  even potentially –  become known, determinable or destroyed. Proper policies and procedures to govern these events decrease the risks associated with lost funds and disclosed trade secrets, and increase the availability of the information system to its users. The lack of a KCP will prevent an organization from achieving Level III certification.

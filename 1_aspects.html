@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Details
+title: 詳細
 permalink: /Details/
 ---
 
@@ -31,16 +31,16 @@ permalink: /Details/
         <h1> {{ aspect.id }} {{ aspect.title }}
           <div class="contribution-links">
 
-            <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/aspects/{{ aspect.file }}.yml">Edit</a>
-            | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/aspects/{{ aspect.file }}.yml">History</a>
-            | <a href="https://github.com/CryptoConsortium/CCSS/issues/new?body=Source%20File%3A%20{{ aspect.file }}%0A%0A">Discuss</a>
-            | <a href="#top">Top</a>
+            <a href="https://github.com/CryptoConsortium/CCSS/edit/master/_data/aspects/{{ aspect.file }}.yml">Edit（原文）</a>
+            | <a href="https://github.com/CryptoConsortium/CCSS/commits/master/_data/aspects/{{ aspect.file }}.yml">History（原文）</a>
+            | <a href="https://github.com/CryptoConsortium/CCSS/issues/new?body=Source%20File%3A%20{{ aspect.file }}%0A%0A">Discuss（原文）</a>
+            | <a href="#top">トップへ</a>
           </div>
         </h1>
 
         {{ aspect.description | replace:'](#','](../Definitions#' | markdownify }}
         <p>
-          <h3> Aspect Components Include </h3>
+          <h3> 含まれる観点　コンポーネント </h3>
           <ul class="component-list">
             {% for part in aspect.components %}
               <li>{{part.id}} {{ part.title_short }}</li>

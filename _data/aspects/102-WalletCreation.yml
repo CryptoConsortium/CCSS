@@ -10,7 +10,7 @@ id: 1.02
 title: Wallet Creation
 file: 102-WalletCreation
 
-category: Cryptographic Asset Management
+category: 暗号資産管理
 
 description: >
   This aspect covers the creation of [wallets](#wallet) or [addresses](#address) that can receive cryptocurrencies. Wallets are created using key signing methodologies that can require a single key’s signature, multiple keys' signatures, or a minimum number of signatures from many keys. Furthermore, wallets can be created individually (commonly referred to as JBOK wallets, or "Just a Bunch Of Keys") or in a deterministic way that allows a set of addresses/key pairs to be created from a single master seed.

@@ -10,7 +10,7 @@ id: 1.04
 title: Key Usage
 file: 104-KeyUsage
 
-category: Cryptographic Asset Management
+category: 暗号資産管理
 
 description: >
   This aspect covers the use of cryptographic [keys](#key) and/or [seeds](#seed) to ensure they are used in a secure manner that minimizes the risks to the confidentiality of private keys and integrity of funds. This section does not cover the usage of key backups which are only used in the event the primary key is lost/damaged/inaccessible. A variety of risks are present when using keys that can lead to the loss of funds including dirty signature vulnerabilities (i.e. re-used 'R' values), opportunity for malware to copy or modify keys, and malicious insiders who use their authorized access to send unauthorized transactions.
