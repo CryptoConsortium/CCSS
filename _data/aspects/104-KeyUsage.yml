@@ -23,10 +23,12 @@ level_one:
   - Digital [signatures](#signature) must use a 'k' value that is never repeated. This can be accomplished through the use of a [deterministic random bit generator (DRBG)](#drbg) that is compliant with [NIST SP 800-90A](http://http://csrc.nist.gov/publications/nistpubs/800-90A/SP800-90A.pdf), or a deterministic scheme compatible with [RFC 6979](https://tools.ietf.org/html/rfc6979). Using strong sources of [entropy](#entropy) is required in order to prevent "dirty signature" vulnerabilities that can allow attackers to recover the private key that was used to compute the signature. A common implementation of this is to use the [pseudo-random number generator (PRNG)](#prng) supplied by popular operating systems, or an RFC 6979-compatible scheme.
 
 level_two:
+  - The [trusted environment](#trusted-environment) does not permit connecting any external devices. This includes USB keys with transaction data. Transfer of transaction data to sign is performed using QR codes (optical transfer) or manual typing process.
   - All organizational [key](#key)/[seed](#seed)-holders have undergone [identity verification](#identity-verification) to ensure they are who they say they are. This reduces the risks associated with impersonation and social engineering attacks which may result in access to organizational or customer funds.
   - Verification of fund destinations and amounts is performed via a [Authenticated Communication Channel](#authenticated-communication-channel) prior to [key](#key)/[seed](#seed) use. This can be performed by humans before using their keys/seeds to ensure they’re sending the right amount of funds to the right [addresses](#address)/people/companies, or by systems that perform automated signing by checking destination addresses against whitelists and spending limits before the signature is applied. The implementation of payment protocols that provide [digitally signed](#signature) addresses, or the use of systems that display images and business names instead of cryptocurrency addresses greatly simplify this verification process.
 
 level_three:
+  - The [trusted environment](#trusted-environment) does not permit connecting any external devices. This includes USB keys with transaction data. Transfer of transaction data to sign is performed using QR codes (optical transfer) or manual typing process.
   - Access to the [key](#key)/[seed](#seed) requires an identifier (e.g. username, email, GUID, etc.) and at least 3 (three) other [factors of authentication](#authentication-factor). Similar to the requirement of 2 additional factors in Level I, the other 3 factors of authentication in Level III can take any form that provides confirmation of an authorized user's identity.
   - All organizational [key](#key)/[seed](#seed) holders have had background checks performed by law enforcement personnel or investigative firms. This ensures each key/seed holder is who they say they are and does not have evidence in their past of actions that would represent a risk to the organization if they had signing authority on organization or user funds.
 
@@ -96,3 +98,16 @@ components:
       The 'k' values in digital signatures are created using a NIST SP 800-90A compliant DRBG
       OR
       The 'k' values are created deterministically according to RFC 6979
+  - component: &010409
+    id: 1.4.9
+    title_short: Electrical isolation of trusted devices
+    uncertified: >
+      There are devices that are being connected to the trusted environment, such as a USB flash-drive with transaction data to sign
+    level_one: >
+      There are devices that are being connected to the trusted device, such as a USB flash-drive with transaction data to sign
+    level_two: >
+      The trusted environment does not permit connecting any external devices. This includes USB keys with transaction data.
+      Transfer of transaction data to sign is performed using QR codes (optical transfer) or manual typing process.
+    level_three: >
+      The trusted environment does not permit connecting any external devices. This includes USB keys with transaction data.
+      Transfer of transaction data to sign is performed using QR codes (optical transfer) or manual typing process.
