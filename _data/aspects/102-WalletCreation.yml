@@ -56,7 +56,7 @@ components:
     id: 1.2.4
     title_short: Deterministic wallets
     uncertified:
-    level_one:
+    level_one: Use of HD wallet hierarchy structure for organizational assignment of keys and children.
     level_two: Addresses are assigned deterministically
     level_three: Addresses are assigned deterministically
   - component: &010205
@@ -70,6 +70,6 @@ components:
     id: 1.2.6
     title_short: Organizational distribution of keys
     uncertified:
-    level_one:
+    level_one: 
     level_two:
     level_three: Keys are distributed across multiple organizational entities
