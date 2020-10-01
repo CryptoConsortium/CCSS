@@ -8,7 +8,7 @@ permalink: /Definitions/
   <h1 class="page-heading">Definitions</h1>
   <ul class="post-list">
   {% for definitions_hash in site.data.definitions %}
-    {% assign def = definitions_hash[1] %}
+    {% assign def = definitions_hash[1]  %}
     <li>
       <h3 id="{{ def.id }}"> {{ def.term }}
         <div class="contribution-links">

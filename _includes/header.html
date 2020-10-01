@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-  <img src='/CCSS/images/{{ site.logo }}' class='logo' /> <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <img src='/CCSS/images/{{ site.logo }}' class='logo' /> 
 
 
     <nav class="site-nav">
@@ -15,6 +15,7 @@
       </a>
 
       <div class="trigger">
+	<a class="page-link" href="{{ site.baseurl }}/">{{ site.title }}</a>
         {% for page in site.pages %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>

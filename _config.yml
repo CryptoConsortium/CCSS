@@ -1,5 +1,5 @@
 # Site settings
-title: Open Standard Repository
+title: CCSS
 email: info@cryptoconsortium.org
 description: > # this means to ignore newlines until "baseurl:"
   The CryptoCurrency Certification Consortium (C4) establishes cryptocurrency
@@ -9,7 +9,7 @@ baseurl: "/CCSS" # the subpath of your site, e.g. /blog/
 url: "https://cryptoconsortium.github.io" # the base hostname & protocol for your site
 twitter_username: LearnMoreWithC4
 github_username:  cryptoconsortium
-logo: CCSS Logo.png
-org_logo: C4 Logo.png
+logo: CCSS_Logo_Color_Dark.png
+org_logo: C4_Color_Dark.png
 # Build settings
 markdown: kramdown
