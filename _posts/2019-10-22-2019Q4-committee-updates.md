@@ -9,8 +9,8 @@ Following the 2019Q4 meeting of the steering committee, a number of proposed cha
 
 * Unique Address Requirement moved from L1 to L3 of 1.2.1
 * Backup Key Access Controls moved from L2 to L1 of 1.3.4
-* [Identity Verification](#identity-verification) definition expanded to include verification of third-party organizations
-* A caveat has been added for [Forks](#fork)
+* [Identity Verification](/CCSS/Definitions/#identity-verification) definition expanded to include verification of third-party organizations
+* A caveat has been added for [Forks](/CCSS/Caveats/#fork)
 
 ### Contributors
 
