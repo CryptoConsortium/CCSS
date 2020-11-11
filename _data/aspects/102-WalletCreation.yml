@@ -34,7 +34,7 @@ components:
   - component: &010201
     id: 1.2.1
     title_short: Unique address per transaction
-    uncertified: Wallets/addresses are reused
+    uncertified: 
     level_one: 
     level_two: 
     level_three: Unique addresses are generated for every transaction
