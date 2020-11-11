@@ -1,0 +1,6 @@
+
+id: fork
+term: Blockchain Forks
+file: Forks
+description: >
+  When a blockchain ends up with two persistent tips - with neither being orphaned - the single chain becomes split into two independent blockchains with a shared common history. Forks can occur through intentional changes to consensus rules, or as a result of an accidental divergence of consensus. In either case, there may not be any "replay protection" for transactions intended for one side of the fork. This can cause a transaction to accidentally transfer more funds than intended. All information systems that deal with blockchains should be able to handle forks in a way that is consistent with the business requirements that govern it.
