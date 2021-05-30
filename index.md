@@ -34,15 +34,15 @@ CCSS is broken into three (3) levels of increasing security. Details of these ar
 
 ## Level I
 
-An information system that has achieved Level I security has proven by way of audit that they protect their information assets with strong levels of security. Most risks to the system’s information assets have been addressed by controls that meet industry guidelines. While this is the lowest level within CCSS, it still represents strong security.
+An information system that has achieved Level I security has proven by way of audit that they protect their information assets with strong levels of security. Most risks to the system’s information assets have been addressed by controls that meet industry guidelines. These controls have been tested by an independent auditor and found to be operating effectively during the audit period.
 
 ## Level II
 
-An information system that has achieved Level II security has proven by way of audit that they exceed strong levels of security with additional enhanced controls. In addition to covering most risks to the information system’s assets, the use of decentralized security technologies such as multiple signatures have been employed which exceed industry guidelines and provide redundancy if any one key or person becomes unavailable or compromised.
+An information system that has achieved Level II security has proven by way of audit that they exceed strong levels of security with additional enhanced controls. In addition to covering most risks to the information system’s assets, the use of decentralized security technologies such as multiple signatures have been employed which exceed industry guidelines and provide redundancy if any one key or person becomes unavailable or compromised. These controls have been tested by an independent auditor and found to be operating effectively during the audit period.
 
 ## Level III
 
-An information system that has achieved Level III security has proven by way of audit that they exceed enhanced levels of security with formalized policies and procedures that are enforced at every step within their business processes. Multiple actors are required for all critical actions, advanced authentication mechanisms ensure authenticity of all data, and assets are distributed geographically and organizationally in such a way to be resilient against compromise of any person or organization.
+An information system that has achieved Level III security has proven by way of audit that they exceed enhanced levels of security with formalized policies and procedures that are enforced at every step within their business processes. Multiple actors are required for all critical actions, advanced authentication mechanisms ensure authenticity of all data, and assets are distributed geographically and organizationally in such a way to be resilient against compromise of any person or organization.These controls have been tested by an independent auditor and found to be operating effectively during the audit period.
 
 
 # This Repository
