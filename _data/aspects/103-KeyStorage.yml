@@ -22,16 +22,18 @@ level_one:
   - A backup of the cryptographic [key](#key)/[seed](#seed) must exist. The backup can take any form (paper, digital, etc.).
   - The backup must be protected by access controls that prevent unauthorized parties from accessing it. Examples of this include safes, safe deposit boxes, or locked drawers where only the operator holds the key/combination for the lock.
   - The backup must be protected against environmental risks such as fire, flood, and other acts of God. While the specific mechanisms of environmental protection may change depending on the type of medium used for backup, in general, common methods to achieve this include a water-tight bag for flood protection and a safe or firebox for fire protection.
+  - While no formal key storage documents exist, there are staff members who are familiar with the procedures around key storage.
 
 level_two:
   - A backup must exist for at least as many [keys](#key) as is required to spend funds. For example, in a 2-of-3 signing setup where any two of three keys are required to spend funds, backups must exist for at least 2 of these keys. In a 5-of-9 setup, backups must exist for at least 5 keys.
   - The backup [key](#key)/[seed](#seed) must be stored in a location that is geographically separate from the usage location of the primary key/seed. For example, if the primary key is kept at an office, the backup key can be stored at an employee's personal home. Another example could involve leaving the backup in escrow with a trusted 3rd party.
   - The backup must employ some form of tamper evident mechanism that allows an operator to determine when it has been accessed. A secure method of achieving this involves a serial-numbered tamper-evident bag, however properly sealed paper envelopes with handwritten signatures over the seal could also suffice provided the specific envelopes in use are able to reveal evidence of tampering.
+  - The organisation has a documented custody policy in place which details the company’s internal policies and procedures and covers the relevant areas of key storage.
 
 level_three:
   - Backups of cryptographic [keys](#key) and/or [seeds](#seed) must be stored with the use of [strong encryption](#strong-encryption) when not in use that is at least equal to the security prescribed for cryptographic keys/seeds above. If backups use a less-secure mechanism than the key/seed itself, the system can not be certified as Level III.
   - Backups are resistant to electromagnetic pulses that could induce currents in electronics and damage the data stored within. A common methodology to secure against this risk is to store a [seed](#seed) or [key](#key) on paper, wood, metal, or on another non-digital medium, or to place the digital medium within a sealed faraday bag designed to protect contents from electro-magnetic interference.
-
+  - The organisation has a documented custody policy in place which details the company’s internal policies and procedures and covers the relevant areas of key storage.
 
 components:
   - component: &010301
@@ -76,3 +78,10 @@ components:
     level_one:
     level_two:
     level_three: Key/seed backup is stored with strong encryption equal/better than that used to protect primary key
+- component: &010307
+    id: 1.3.7
+    title_short: Documented key storage policy
+    uncertified:
+    level_one: No formal policy, but staff members are familiar with the procedures followed.
+    level_two: Documented key storage policy in place.
+    level_three: Documented key storage policy in place.

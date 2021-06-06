@@ -22,13 +22,16 @@ level_one:
   - All [key](#key)/[seed](#seed)-holders (individuals and organizations) have undergone [identity verification](#identity-verification) to ensure they are who they say they are. This reduces the risks associated with impersonation and social engineering attacks which may result in access to organizational or customer funds.
   - No two [master keys](#key)/[seeds](#seed) of the same [multi-signature](#multisig) wallet are ever present on the same device. Placing two keys of the same wallet on a single device exposes the keys to information leakage by either a malicious operator or malicious software. Ensuring every key of a wallet is used on dedicated devices reduces these risks, thereby increasing security.
   - Digital [signatures](#signature) must use a 'k' value that is never repeated. This can be accomplished through the use of a [deterministic random bit generator (DRBG)](#drbg) that is compliant with [NIST SP 800-90A](http://http://csrc.nist.gov/publications/nistpubs/800-90A/SP800-90A.pdf), or a deterministic scheme compatible with [RFC 6979](https://tools.ietf.org/html/rfc6979). Using strong sources of [entropy](#entropy) is required in order to prevent "dirty signature" vulnerabilities that can allow attackers to recover the private key that was used to compute the signature. A common implementation of this is to use the [pseudo-random number generator (PRNG)](#prng) supplied by popular operating systems, or an RFC 6979-compatible scheme.
+  - While no formal key usage documents exist, there are staff members who are familiar with the procedures around key usage.
 
 level_two:
   - Verification of fund destinations and amounts is performed via a [Authenticated Communication Channel](#authenticated-communication-channel) prior to [key](#key)/[seed](#seed) use. This can be performed by humans before using their keys/seeds to ensure they’re sending the right amount of funds to the right [addresses](#address)/people/companies, or by systems that perform automated signing by checking destination addresses against whitelists and spending limits before the signature is applied. The implementation of payment protocols that provide [digitally signed](#signature) addresses, or the use of systems that display images and business names instead of cryptocurrency addresses greatly simplify this verification process.
+  - The organisation has a documented custody policy in place which details the company’s internal policies and procedures and covers the relevant areas of key usage.  
 
 level_three:
   - Access to the [key](#key)/[seed](#seed) requires an identifier (e.g. username, email, GUID, etc.) and at least 3 (three) other [factors of authentication](#authentication-factor). Similar to the requirement of 2 additional factors in Level I, the other 3 factors of authentication in Level III can take any form that provides confirmation of an authorized user's identity.
   - All individual [key](#key)/[seed](#seed) holders have had background checks performed by law enforcement personnel or investigative firms. This ensures each key/seed holder is who they say they are and does not have evidence in their past of actions that would represent a risk to the organization if they had signing authority on organization or user funds.
+  - The organisation has a documented custody policy in place which details the company’s internal policies and procedures and covers the relevant areas of key usage.  
 
 components:
   - component: &010401
@@ -96,3 +99,10 @@ components:
       The 'k' values in digital signatures are created using a NIST SP 800-90A compliant DRBG
       OR
       The 'k' values are created deterministically according to RFC 6979
+- component: &010409
+    id: 1.4.9
+    title_short: Documented key storage policy
+    uncertified:
+    level_one: No formal policy, but staff members are familiar with the procedures followed.
+    level_two: Documented key usage policy in place.
+    level_three: Documented key usage policy in place.
