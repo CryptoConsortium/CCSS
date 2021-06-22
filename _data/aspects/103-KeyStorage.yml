@@ -31,7 +31,7 @@ level_two:
   - The organisation has a documented custody policy in place which details the company’s internal policies and procedures and covers the relevant areas of key storage.
 
 level_three:
-  - Backups of cryptographic [keys](#key) and/or [seeds](#seed) must be stored with the use of [strong encryption](#strong-encryption) when not in use that is at least equal to the security prescribed for cryptographic keys/seeds above. If backups use a less-secure mechanism than the key/seed itself, the system can not be certified as Level III.
+  - Electronic backups of cryptographic [keys](#key) and/or [seeds](#seed) must be stored with the use of [strong encryption](#strong-encryption) when not in use that is at least equal to the security prescribed for cryptographic keys/seeds above. If backups use a less-secure mechanism than the key/seed itself, the system can not be certified as Level III.
   - Backups are resistant to electromagnetic pulses that could induce currents in electronics and damage the data stored within. A common methodology to secure against this risk is to store a [seed](#seed) or [key](#key) on paper, wood, metal, or on another non-digital medium, or to place the digital medium within a sealed faraday bag designed to protect contents from electro-magnetic interference.
   - The organisation has a documented custody policy in place which details the company’s internal policies and procedures and covers the relevant areas of key storage.
 
