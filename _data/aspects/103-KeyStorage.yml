@@ -78,7 +78,7 @@ components:
     level_one:
     level_two:
     level_three: Key/seed backup is stored with strong encryption equal/better than that used to protect primary key
-- component: &010307
+  - component: &010307
     id: 1.3.7
     title_short: Documented key storage policy
     uncertified:

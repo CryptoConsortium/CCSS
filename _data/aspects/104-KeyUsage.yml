@@ -99,7 +99,7 @@ components:
       The 'k' values in digital signatures are created using a NIST SP 800-90A compliant DRBG
       OR
       The 'k' values are created deterministically according to RFC 6979
-- component: &010409
+  - component: &010409
     id: 1.4.9
     title_short: Documented key storage policy
     uncertified:

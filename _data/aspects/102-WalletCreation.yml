@@ -66,7 +66,7 @@ components:
     level_one:
     level_two:
     level_three: Keys are distributed across multiple organizational entities
-- component: &010206
+  - component: &010206
     id: 1.2.6
     title_short: Documented wallet creation policy
     uncertified:
