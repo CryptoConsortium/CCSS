@@ -27,7 +27,7 @@ The cost of the agreement will be determined between the auditor and auditee. It
 
 All audit fees must also include the CCSS peer review fee which will be payable to the CCSS by the CCSSA performing the engagement. 
 
-<h3>1.1.3Confidentiality</h3>
+<h3>1.1.3 Confidentiality</h3>
 The CCSSA is responsible for ensuring that all agreements include a confidentiality clause in line with the requirement of the jurisdiction the audit is being performed in.
 
 
@@ -57,7 +57,7 @@ The CCSSA is responsible for obtaining sufficient comfort and evidence over the 
 
 This evidence and procedures performed should also be documented for a peer reviewer to be able to inspect and verify the accuracy and completeness of information. 
 
-The following are examples of information/evidence that should be retained for IPE purposes:
+The following are examples of information/evidence that should be retained for IPE purposes
 - Date report was generated
 - Data source (a specific system, application or relevant database table)
 - System/tool generating IPE
@@ -85,7 +85,7 @@ Audit sampling enables the auditor to obtain and evaluate audit evidence about s
 <b>Sample size</b>
 The sample size can be determined by the application of a statistically based formula or through the exercise of professional judgment.
 
-The auditor must document their rationale behind the sample size selected and consider the following factors:
+The auditor must document their rationale behind the sample size selected and consider the following factors
 - What a tolerable rate of deviation will be given the size of the population;
 - What the likelihood and impact is of errors occurring given the procedure being tested;
 - How critical the procedure is and the level of certainty required given its importance;
@@ -107,30 +107,30 @@ The auditor must document their rationale behind the sample size selected and co
 
 When identifying the items to be tested the auditor can use professional judgement, random selection of a combination of the two techniquest. 
 
-When identifying items to test using professional judgement the audit should consider factors such as the following:
+When identifying items to test using professional judgement the audit should consider factors such as the following.
 - Items that are likely to be subject to manipulation;
 - When the items occurred;
 - Who performed procedure;
 - Items that are outliers in the general population etc. 
 			
-When identifying items using random selection the auditor should make use of a randomized sampling technique such as the following:
+When identifying items using random selection the auditor should make use of a randomized sampling technique such as the following.
 
 - Simple random selection (using a random number generator within the range of the population for example)
 - Systematic random (Identifying a starting point and then selection items at a specific interval from this point)
 
 
-<h4>1.2.4. Data storage and transmission<h/3>
+<h3>1.2.4. Data storage and transmission</h3>
 The CCSSA is responsible for ensuring all data related to the audit is transmitted and stored in a secure manner. 
 
 The CCSSA is also responsible for ensuring all data protection requirements (General Data Protection Regulation (GDPR) or equivalent) are met for the jurisdiction the audit is being performed in.
 
-<h2>1.3. Peer review<h/2>
+<h2>1.3 Peer review</h2>
 
 All CCSS audits will be subject to a peer review process. This process will be governed by the CCSS Steering committee and C4. Once a CCSSA has completed a certification audit they will submit their audit evidence as well as conclusion on the CCSS Level certification obtained to the CCSS for peer review. 
 
 The CCSS will identify an appropriate peer reviewer who will review the evidence and conclusions reached in the audit. Once completed, the reviewer will submit any queries and the CCSSA will have the opportunity to respond to these queries. Once all queries have been resolved the certification will be sent for final approval.
 
-Timeframe for review process:
+Timeframe for review process
 
 | <b>Procedure</b> | <b>Timeframe</b> |
 | Peer review | 10 working days |
@@ -144,7 +144,7 @@ A CCSSA will have two working days to request a different peer reviewer where su
 
 Once final approval has been obtained from the peer reviewer of the engagement and the CCSSA level has been agreed, the certification will be added to the CCSS website. 
 
-Certifications can be viewed and verified at the following link: xxxxx
+Certifications can be viewed and verified at the following link [XXX]
 
 The CCSS will maintain a record of all accredited CCSSA’s, CCSS reports issued and the individuals who performed and peer reviewed the report which will be displayed on the CCSS website. 
 
@@ -154,7 +154,7 @@ Audit documentation is the records maintained by the CCSSA performing the audit 
 
 <h2>2.1 Minimum audit documentation required</h2>
 
-The audit documentation should at a minimum detail the following:
+The audit documentation should at a minimum detail the following.
 
 - Procedures performed to reach conclusion (ie. inspection, inquiry, reperformance, observation etc.);
 - Evidence of procedures performed over Information Produced by the entity (IPE) to demonstrate completeness and accuracy;
@@ -177,3 +177,4 @@ Failure to disclose any conflicts of interest may result in disciplinary action 
 The CCSSA performing the peer review must disclose any potential conflict of interest they may have to the CCSS when selected for the peer review. This may include previous employment, familial relationships, financial interest (such as tokens or equity held) or any other matters that may constitute a conflict of interest. 
 
 Failure to disclose any conflicts of interest may result in disciplinary action from the CCSS.  
+
