@@ -1,0 +1,14 @@
+I"Ì<p>Commit history is a great tool but it doesnâ€™t always allow us to tell the entire story, or easily access it. Now, when submitting changes to the CCSS, we suggest that you include a post like this one describing the changes, outlining the reasoning for the change, and the impact it may have on established environments.</p>
+
+<p>Although not a requirement, we welcome you to include details on the contirbutors and their affiliations as well.</p>
+
+<p>This changelog is written to take advantage of the static blogging capabilities already built into Jekyll. Posts like this one are written in markdown and saved to the _posts folder of the repository. All changelog entries should be named in the format YYYY-MM-DD-title.md in order to be picked up by the engine.</p>
+
+<p>We have included a template document (YYYY-MM-DD-template.md) into the repository which can be copied as the basis for all changelog posts.</p>
+
+<p>Modest sized images for explaining concepts or showing sponsorship/affiliations can  be included in the images directory. This is prefered over the use of external links.</p>
+
+<h3 id="change-contributors">Change Contributor(s)</h3>
+<p>Joshua McDougall, <a href="https://cryptoconsortium.org">C4</a></p>
+
+:ET

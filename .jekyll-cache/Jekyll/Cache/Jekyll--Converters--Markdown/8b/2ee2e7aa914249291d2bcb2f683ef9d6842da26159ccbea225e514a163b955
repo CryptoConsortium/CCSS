@@ -1,0 +1,14 @@
+I"!<p><a href="/CCSS/Details/#1.03">1.03 Key Storage</a> aspect was expanded to allow for Password-Based Key Derivation as an alternative to storing the key in an encrypted state. With Password-Based Key Derivation, the seed can be stored unencrypted as the password used to derive the key from the seed would accomplish the same as a passworded encryption layer on top of the seed.</p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="http://en.wikipedia.org/wiki/PBKDF2">http://en.wikipedia.org/wiki/PBKDF2</a></li>
+  <li><a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki</a></li>
+</ul>
+
+<h3 id="contributors">Contributor(s)</h3>
+<ul>
+  <li>Ryan X. Charles, <a href="https://bitgo.com">BitGo</a></li>
+</ul>
+
+:ET

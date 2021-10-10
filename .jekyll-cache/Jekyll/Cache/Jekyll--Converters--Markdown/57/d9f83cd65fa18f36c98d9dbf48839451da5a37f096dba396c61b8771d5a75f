@@ -1,0 +1,2 @@
+I"ä<p>This aspect covers the removal of cryptographic <a href="../Definitions#key">keys</a> from digital media. Due to the manner in which file systems allocate data on digital media, digital forensic techniques can be employed to read old data that has previously been deleted. Proper sanitization of digital media ensures the proper removal of all keys, eliminating the risk of information leakage from decommissioned devices like servers, hard disk drives, and removable storage.</p>
+:ET

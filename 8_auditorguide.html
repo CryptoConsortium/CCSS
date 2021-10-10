@@ -1,0 +1,213 @@
+---
+layout: default
+title: Auditor Guide
+permalink: /AuditorGuide/
+---
+
+<div class="home">
+  This guide has been created to assist CCSSA's in the performance of audits. 
+
+  <h1>1. Audit process</h1>
+
+  <h2>1.1. Appointment</h2>
+
+  <p>
+  <h3>1.1.1 Agreement</h3>
+  All CCSS audit engagements must be based on a written agreement between the auditor and information system operator. Agreements will not include the CCSS or CryptoCurrency Certification Consortium (C4) and are directly between auditor and auditee.
+  </p>
+
+  <p>
+  <h3>1.1.2 Costs</h3>
+  The cost of the agreement will be determined between the auditor and auditee. It is the responsibility of the CCSSA to ensure sufficient time has been allocated to the engagement to perform it to the required standard of quality. 
+
+  All audit fees must also include the CCSS peer review fee which will be payable to the CCSS by the CCSSA performing the engagement. 
+  </p>
+
+  <p>
+  <h3>1.1.3 Confidentiality</h3>
+  The CCSSA is responsible for ensuring that all agreements include a confidentiality clause in line with the requirement of the jurisdiction the audit is being performed in.
+  </p>
+
+  <h2>1.2.  The audit</h2>
+
+  <p>
+  <h3>1.2.1. Period covered</h3>
+
+  All CCSS engagement covers a period of time and will test the operating effectiveness of the control over this period of time.
+  <br \>
+  Engagements are designed to be performed at least annually and cover the preceding 12 month period. Where a first time audit is performed the period covered may be 6 to 18 months. 
+  <br \>
+  The recommended process to follow for a first time audit is an initial readiness assessment by the CCSSA, followed by a remediation and operating process and then the final CCSS audit.
+  <br \>
+  <br \>
+  <i>Example:</i>
+  <br \>
+  <i>Company A  was started in November 20X1 and started discussing an audit with a CCSSA in March 20X2. They want to perform a CCSS audit which covers the period from 1 July to 30 June annually. </i>
+  <br \>
+  <i>The CCSSA will perform a readiness assessment in March 20X2 to identify any remediation actions required by the company.</i> 
+  <br \>
+  <i>Where no remediation actions or very few are identified the company may choose to initiate a full CCSS audit immediately over a period starting before the date of the readiness assessment. For this example, let's say they choose a period from 1 November 20X1 to 30 June 20X2 (8months). The CCSSA will then perform their audit over the full period and the client faces the risk of non compliance if any exceptions are identified in the period before the readiness assessment.</i>
+  <br \>
+  <i>Where remediation actions are identified the client can remediate these points and then choose a point in time when the audit period will start. Let’s say the client chooses to take April 20X2 to remediate points and decides to start the effective audit period from 1 May 20X2.</i> 
+  <br \>
+  <i>The audit period will then run from 1 May 20X2 to 30 June 20X3 (14 months) for the first audit.</i> 
+  </p>
+
+  <p>
+  <h3>1.2.2. Completeness and accuracy of information provided by the entity (IPE)</h3>
+
+  The CCSSA is responsible for obtaining sufficient comfort and evidence over the completeness and accuracy of all information obtained in the performance of the CCSS audit. 
+  <br \>
+  This evidence and procedures performed should also be documented for a peer reviewer to be able to inspect and verify the accuracy and completeness of information. 
+  <br \>
+  The following are examples of information/evidence that should be retained for IPE purposes
+  <ul>
+  <li>Date report was generated</li>
+  <li>Data source (a specific system, application or relevant database table)</li>
+  <li>System/tool generating IPE</li>
+  <li>Report owner</li>
+  <li>Screenshots of parameters, scripts and or queries used to run the report</li>
+  <li>Report validation supporting documents</li>
+  </ul>
+  CCSSA’s should also consider the nature of the report generated. For standard and canned system reports, little additional additional testing would be required. For custom reports of ad-hoc queries, the CCSSA should consider additional procedures such as inspecting the query parameters or database query to ensure data produced is accurate and complete.   
+  <br \>
+  These considerations should take into account input, processing and output risks around the report. 
+  <br \>
+  <br \>
+  <i>Example:</i>
+  <br \>
+  <i>Where an auditor is testing controls such as new users added to the system, the auditor should obtain a list of all new users appointed or transfers between departments during the period directly from the client’s HR system. The auditor may inspect the parameters used while pulling this listing to ensure no data was excluded and the period covered is correct. Screenshots can be taken of the query and resulting output as evidence of IPE procedures.</i>
+  <br \> 
+  <i>Where a client has privacy concerns over this data, the auditor may observe them pulling the listing via a video call, noting the number of records and spots checks on the data. The client can then anonymise data, leaving unique identifiers to be able to identify items, before sending the listing to the auditor.</i> 
+  <br \>
+  <i>The auditor can then use this listing and unique identifiers to select the sample for testing the control.</i>
+  </p>
+
+  <p>
+  <h3>1.2.3. Sampling</h3>
+  Where a CCSSA is testing the operating effectiveness of a control over a period of time a sampling approach should be followed. For a control with a high frequency of occurrence it is not practical to test all occurrences.
+  <br \>
+  Audit sampling enables the auditor to obtain and evaluate audit evidence about some characteristic of the items selected in order to form or assist in forming a conclusion concerning the population from which the sample is drawn. 
+  <br \>
+  <br \>
+  <b>Sample size</b>
+  <br \>
+  The sample size can be determined by the application of a statistically based formula or through the exercise of professional judgment.
+  <br \>
+  The auditor must document their rationale behind the sample size selected and consider the following factors
+  <br \>
+  <lu>
+   <li>What a tolerable rate of deviation will be given the size of the population;</li>
+   <li>What the likelihood and impact is of errors occurring given the procedure being tested;</li>
+   <li>How critical the procedure is and the level of certainty required given its importance;</li>
+  </lu>  
+  <br \>
+  <i>Example:</i>
+  <br \>
+  <i>An example of a testing approach would be the following (this is only a guide and should not be used as your testing methodology)</i>
+   <br \>
+   <table>
+    <thead><th>Population size</th><th>Low risk of failure/low importance</th><th>High risk of failure/ high importance</th></thead>
+    <tr><td>1(Annual) </td><td> 1 </td><td> 1 </td></tr>
+    <tr><td> 4(Quarterly) </td><td> 2 </td><td> 3 </td></tr>
+    <tr><td>  12(Monthly) </td><td> 3 </td><td> 6 </td></tr>
+    <tr><td> 1-25(occurrences) </td><td> 5 </td><td> 10 </td></tr>
+    <tr><td> 26-50(occurrences) </td><td> 10 </td><td> 20 </td></tr>
+    <tr><td> 51-100(occurrences) </td><td> 20 </td><td> 30 </td></tr>
+    <tr><td> 101- X(occurrences) </td><td> 30 </td><td> Auditor judgement used </td> </tr>
+  </table>
+  <br \>
+  <b>Items selected for testing</b>
+  <br \>
+  When identifying the items to be tested the auditor can use professional judgement, random selection of a combination of the two techniquest. 
+  <br \>
+  When identifying items to test using professional judgement the audit should consider factors such as the following.
+  <br \>
+  <lu>
+    <li>Items that are likely to be subject to manipulation;</li>
+    <li>When the items occurred;</li>
+    <li>Who performed procedure;</li>
+    <li>Items that are outliers in the general population etc. </li>
+  </lu>  
+  <br \> 
+  When identifying items using random selection the auditor should make use of a randomized sampling technique such as the following.
+  <lu>
+
+  <li>Simple random selection (using a random number generator within the range of the population for example)</li>
+  <li>Systematic random (Identifying a starting point and then selection items at a specific interval from this point)</li>
+  </lu>
+  </p>
+
+  <p>
+  <h3>1.2.4. Data storage and transmission</h3>
+  The CCSSA is responsible for ensuring all data related to the audit is transmitted and stored in a secure manner. 
+  <br \>
+  The CCSSA is also responsible for ensuring all data protection requirements (General Data Protection Regulation (GDPR) or equivalent) are met for the jurisdiction the audit is being performed in.
+  </p>
+  <p>
+  <h2>1.3 Peer review</h2>
+
+  All CCSS audits will be subject to a peer review process. This process will be governed by the CCSS Steering committee and C4. Once a CCSSA has completed a certification audit they will submit their audit evidence as well as conclusion on the CCSS Level certification obtained to the CCSS for peer review. 
+<br \>
+  The CCSS will identify an appropriate peer reviewer who will review the evidence and conclusions reached in the audit. Once completed, the reviewer will submit any queries and the CCSSA will have the opportunity to respond to these queries. Once all queries have been resolved the certification will be sent for final approval.
+<br \>
+  Timeframe for review process
+<br \>
+<table>
+  <thead><th>Procedure</th><th>Timeframe</th></thead>
+  <tr><td>Peer review </td><td> 10 working days </td></tr>
+  <tr><td> Resolution of queries </td><td> 10 working days </td></tr>
+</table>
+<br \>
+  All CCSSA’s will be required to make themselves available to perform two peer review engagements annually. 
+<br \>
+  A CCSSA will have two working days to request a different peer reviewer where sufficient evidence is submitted to the CCSS to show that the reviewer has a material conflict of interest or another reason to not perform the review.  
+  </p>
+
+  <p>
+  <h2>1.4 Approval</h2>
+
+  Once final approval has been obtained from the peer reviewer of the engagement and the CCSSA level has been agreed, the certification will be added to the CCSS website. 
+  <br \>
+  Certifications can be viewed and verified at the following link [XXX]
+  <br \>
+  The CCSS will maintain a record of all accredited CCSSA’s, CCSS reports issued and the individuals who performed and peer reviewed the report which will be displayed on the CCSS website. 
+  </p>
+
+  <p>
+  <h1>2. Documentation</h1>
+
+  Audit documentation is the records maintained by the CCSSA performing the audit to support the basis for the auditor's conclusions over the effectiveness of controls and CCSS Level obtained. 
+  </p>
+  <p>
+  <h2>2.1 Minimum audit documentation required</h2>
+
+  The audit documentation should at a minimum detail the following.
+  <br \>
+  <lu>
+    <li>Procedures performed to reach conclusion (ie. inspection, inquiry, reperformance, observation etc.); </li>
+    <li>Evidence of procedures performed over Information Produced by the entity (IPE) to demonstrate completeness and accuracy;</li>
+    <li>Rational and methodology used when applying sampling over a population of items;</li>
+    <li>Rational for conclusion reached on the CCSS level of compliance;</li>
+  <br \>
+  The auditor must retain audit documentation for 7 years or as long as required by law in the jurisdiction they are operating in. 
+  </p>
+  
+  <h1>3. Conflicts of interest</h1>
+
+  <p>
+  <h2>3.1. Auditor</h2>
+
+  The CCSSA performing the audit engagement must disclose any potential conflict of interest they may have to the CCSS when submitting the audit for review. This may include previous employment, familial relationships, financial interest (such as tokens or equity held) or any other matters that may constitute a conflict of interest. 
+  <br \>
+  Failure to disclose any conflicts of interest may result in disciplinary action from the CCSS. 
+  </p>
+
+  <p>
+  <h2>3.2. Peer reviewer</h2>
+
+  The CCSSA performing the peer review must disclose any potential conflict of interest they may have to the CCSS when selected for the peer review. This may include previous employment, familial relationships, financial interest (such as tokens or equity held) or any other matters that may constitute a conflict of interest. 
+  <br \>
+  Failure to disclose any conflicts of interest may result in disciplinary action from the CCSS.  
+  </p>
+</div>

@@ -1,0 +1,2 @@
+I"–<p>The backup <a href="../Definitions#key">key</a>/<a href="../Definitions#seed">seed</a> must be stored in a location that is geographically separate from the usage location of the primary key/seed. For example, if the primary key is kept at an office, the backup key can be stored at an employeeâ€™s personal home. Another example could involve leaving the backup in escrow with a trusted 3rd party.</p>
+:ET

@@ -1,0 +1,2 @@
+I"¬<p>Redundant <a href="../Definitions#key">keys</a> are assigned to each <a href="../Definitions#wallet">wallet</a> for recovery purposes. This ensures that the funds are still available in the event one of the primary keys becomes inaccessible for any reason. One common method of achieving this goal is to create a wallet that requires any 2 of 3 possible signatures in order to spend funds (i.e. there is 1 redundant key)</p>
+:ET

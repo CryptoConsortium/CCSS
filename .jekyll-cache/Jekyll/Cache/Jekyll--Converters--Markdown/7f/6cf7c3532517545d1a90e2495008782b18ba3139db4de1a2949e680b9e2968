@@ -1,0 +1,2 @@
+I"<p>The <a href="../Definitions#key">cryptographic keys</a> and <a href="../Definitions#seed">seeds</a> are created on a system with sufficient entropy to ensure the keys are not created with any bias towards a reduced range of values, or other deterministic properties.</p>
+:ET

@@ -1,0 +1,2 @@
+I"�<p>Any <a href="../Definitions#key">keys</a> that have signing authority on a single <a href="../Definitions#wallet">wallet</a> must be stored in different locations. By separating the wallet’s keys across multiple locations, the risks associated with localized disruptions to business (i.e. fire, flood, earthquake, break-ins) do not affect the organization’s ability to spend funds.</p>
+:ET

@@ -1,0 +1,2 @@
+I"!<p>Any <a href="../Definitions#key">keys</a> that have signing authority on a single <a href="../Definitions#wallet">wallet</a> must be stored by multiple organizational entities. By giving keys to separate legal entities, such as lawyers, accountants, or other businesses, legal risks that can disrupt your business will not necessarily disrupt your funds. Note that this does not violate the Key/Seed Generation level 1 requirement, as the separate organizations fail to meet the definition of an <a href="../Definitions#actor">actor</a>.</p>
+:ET

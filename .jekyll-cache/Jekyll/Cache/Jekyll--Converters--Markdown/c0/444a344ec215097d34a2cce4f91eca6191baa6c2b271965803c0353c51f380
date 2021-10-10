@@ -1,0 +1,2 @@
+I"è<p>In cases where an automated agent will make use of a cryptographic key/seed, it is recommended that the administrator of that system generate the key/seed on a suitable offline system with sufficient <a href="../Definitions#entropy">entropy</a>, have this key/seed <a href="../Definitions#strong-encryption">transferred securely</a> onto the target device, and then securely deleted using CCSS-compliant data sanitization techniques to protect the confidentiality of the key/seed.</p>
+:ET

@@ -1,0 +1,2 @@
+I"µ<p>Electronic backups of cryptographic <a href="../Definitions#key">keys</a> and/or <a href="../Definitions#seed">seeds</a> must be stored with the use of <a href="../Definitions#strong-encryption">strong encryption</a> when not in use that is at least equal to the security prescribed for cryptographic keys/seeds above. If backups use a less-secure mechanism than the key/seed itself, the system can not be certified as Level III.</p>
+:ET

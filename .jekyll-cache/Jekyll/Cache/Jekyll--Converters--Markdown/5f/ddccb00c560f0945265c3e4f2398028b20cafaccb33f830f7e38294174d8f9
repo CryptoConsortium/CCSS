@@ -1,0 +1,2 @@
+I"£<p>A cryptocurrency address is (usually) an encoded form of a public key from a <a href="#wallet">wallet</a> that can be used as the recipient of a transaction. In <a href="#multisig">multi-signature</a> schemes, an address may be an encoding of information including several public keys and/or other information as in the case of a bitcoin <a href="https://en.bitcoin.it/wiki/Pay_to_script_hash">P2SH</a> address.</p>
+:ET
