@@ -59,9 +59,9 @@ components:
     id: 1.4.4
     title_short: Operator ID checks
     uncertified: ID of one or more operators is not established
-    level_one: Key/seed holders have identify verified
-    level_two: Key/seed holders have identify verified
-    level_three: Key/seed holders have identify verified
+    level_one: Key/seed holders have had their identity verified
+    level_two: Key/seed holders have had their identity verified
+    level_three: Key/seed holders have had their identity verified
   - component: &010405
     id: 1.4.5
     title_short: Operator background checks
