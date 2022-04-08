@@ -1,2 +1,0 @@
-I"<p>A slice of <a href="#entropy">entropy</a> typically used to initialize a <a href="#prng">PRNG</a>/<a href="#drbg">DRBG</a> or other crypto-system (e.g. <a href="#hd-wallet">HD Wallets</a>, <a href="https://tools.ietf.org/html/rfc6979">deterministic signatures</a>).</p>
-:ET

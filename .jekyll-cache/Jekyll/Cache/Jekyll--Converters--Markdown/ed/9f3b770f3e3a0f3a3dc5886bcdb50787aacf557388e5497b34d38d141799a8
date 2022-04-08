@@ -1,2 +1,0 @@
-I"€<p><a href="/CCSS/Details/#1.03">1.03 Key Storage</a> aspect was expanded to allow for Password-Based Key Derivation as an alternative to storing the key in an encrypted state. With Password-Based Key Derivation, the seed can be stored unencrypted as the password used to derive the key from the seed would accomplish the same as a passworded encryption layer on top of the seed.</p>
-:ET

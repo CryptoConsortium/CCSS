@@ -1,2 +1,0 @@
-I"þ<p>An algorithm, program, or system used to produce arbitrary difficult-to-guess values for cryptographic applications. Typically <a href="#seed">seeded</a> with some source of <a href="#entropy">entropy</a>, PRNGs are used, among other things, to generate <a href="#key">cryptographic keys</a>. Sometimes CSPRNG (Cryptographically Secure PRNG). See related: <a href="#drbg">DRBG (Deterministic Random Bit Generator)</a>. <a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">Wikipedia</a></p>
-:ET

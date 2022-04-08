@@ -1,2 +1,0 @@
-I"<p>All <a href="../Definitions#key">keys</a>/<a href="../Definitions#seed">seeds</a> are only used in <a href="../Definitions#trusted-environment">trusted environments</a>. This somewhat reduces the risk of unauthorized copies being made by malware, as well as mitigating the risk of storing (even inadvertently) a key on a machine, allowing it to be recovered by another user or intruder. An effective trusted environment guards against unauthorized persons learning private keys, passwords, or other sensitive information.</p>
-:ET

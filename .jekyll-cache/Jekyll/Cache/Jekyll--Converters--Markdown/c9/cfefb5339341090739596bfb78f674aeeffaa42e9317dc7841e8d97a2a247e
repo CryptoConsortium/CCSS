@@ -1,2 +1,0 @@
-I"Ô<p>No two <a href="../Definitions#key">master keys</a>/<a href="../Definitions#seed">seeds</a> of the same <a href="../Definitions#multisig">multi-signature</a> wallet are ever present on the same device. Placing two keys of the same wallet on a single device exposes the keys to information leakage by either a malicious operator or malicious software. Ensuring every key of a wallet is used on dedicated devices reduces these risks, thereby increasing security.</p>
-:ET

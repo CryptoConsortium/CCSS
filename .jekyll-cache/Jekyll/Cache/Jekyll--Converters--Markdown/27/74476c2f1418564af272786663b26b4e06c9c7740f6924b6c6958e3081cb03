@@ -1,2 +1,0 @@
-I"ÿ<p>The <a href="../Definitions#key">key</a> or <a href="../Definitions#seed">seed</a> generation methodology is validated prior to use. Software that is used to generate seeds should be free from any features that restrict the generated seed to conform to deterministic values and features that store or transmit the generated seed to another <a href="../Definitions#actor">actor</a>, except where such features enhance the effective security of the software (e.g. <a href="../Definitions#drbg">DRBGs</a>).</p>
-:ET

@@ -1,6 +1,0 @@
-I"�<p>A one-time password is any token (often used as a <a href="#authentication-factor">factor of authentication</a>) that is valid for one and only one use. OTP tokens are generally as secure as the weakest of:</p>
-<ol>
-  <li>The channel used to deliver the OTP to the intended user, if any.</li>
-  <li>The system where the OTP is generated and stored until “redeemed.”</li>
-</ol>
-:ET

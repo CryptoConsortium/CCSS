@@ -1,2 +1,0 @@
-I"<p>A documented <a href="../Definitions#key-compromise-protocol">Key Compromise Protocol</a> outlines each specific class of key used throughout the system along with a detailed plan of dealing with its compromise including the proper use of <a href="../Definitions#authenticated-communication-channel">Authenticated Communication Channels</a> during execution. The plan identifies actors via roles and not names and includes secondary actors in the event any primary actor is unavailable to carry out the KCP.</p>
-:ET

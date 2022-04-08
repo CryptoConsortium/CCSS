@@ -1,2 +1,0 @@
-I"¯<p>A communication channel that provides high confidence of the identities of the communicating parties. This could be a voice call where the sound of their known voice is verified, a digitally-signed message (using strong encryption such as PGP/GPG or S/MIME), or a combination of multiple separate channels that are unlikely to be simultaneously compromised, such as an email + an SMS message + an instant message via Slack.</p>
-:ET

@@ -1,2 +1,0 @@
-I"A<p>A backup must exist for at least as many <a href="../Definitions#key">keys</a> as is required to spend funds. For example, in a 2-of-3 signing setup where any two of three keys are required to spend funds, backups must exist for at least 2 of these keys. In a 5-of-9 setup, backups must exist for at least 5 keys.</p>
-:ET

@@ -1,2 +1,0 @@
-I"Ê<p>The <a href="../Definitions#key">cryptographic keys</a> and <a href="../Definitions#seed">seeds</a> are created by the <a href="../Definitions#actor">actor</a> who will be using it. This is an attempt to protect the confidentiality of the key. Any system that requires one actor to transfer a key or seed to another actor after generating it will fail to achieve Level I, with the exception of the initial configuration of an automated signing agent.</p>
-:ET

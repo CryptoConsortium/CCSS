@@ -1,9 +1,0 @@
-I"�<p><a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">Multi-factor authentication</a> schemes require multiple demonstrations of identity. The most common example is a username and password combination, where each input is a factor of authentication. To access protected information in this scheme, an <a href="#actor">actor</a> must provide those two pieces of information. Additional factors generally (although with diminishing returns) increase the security of the system. Common examples include:</p>
-<ul>
-  <li>A <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm">TOTP</a> token may be required, where the token can only be obtained from a device seeded with the TOTP secret (Google Authenticator), which effectively requires the actor be in possession of a specific pre-authorized device.</li>
-  <li>An <a href="#otp">OTP</a> can be delivered to a phone number via SMS, MMS, or a voice call.</li>
-  <li>A biometric scan may be required - although this is usually only useful if the access point is in a controlled and trusted environment.</li>
-</ul>
-
-<p>Colloquially, a username is not considered a factor of authentication since usernames are not commonly secret information. The same applies to email addresses, phone numbers, and other pieces of data which only “identify” actors. The requirement imposed by a factor of authentication should only be satisfiable by the actor identified.</p>
-:ET
