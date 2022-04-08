@@ -1,8 +1,0 @@
-
-id: otp
-term: One-Time Password
-file: OTP
-description: >
-  A one-time password is any token (often used as a [factor of authentication](#authentication-factor)) that is valid for one and only one use. OTP tokens are generally as secure as the weakest of:  
-    1. The channel used to deliver the OTP to the intended user, if any.  
-    2. The system where the OTP is generated and stored until "redeemed."

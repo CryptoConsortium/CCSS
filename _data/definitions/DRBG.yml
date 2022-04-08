@@ -1,6 +1,0 @@
-
-id: drbg
-file: DRBG
-term: Deterministic Random Bit Generator
-description: >
-  A kind of [PRNG](#prng) that can produce some number of values (usually [keys](#keys)) from a single [seed](#seed). DRBGs are primarily useful due to their ability to limit a system's reliance secure sources of [entropy](#entropy)

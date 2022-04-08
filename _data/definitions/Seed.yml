@@ -1,6 +1,0 @@
-
-id: seed
-file: Seed
-term: Seed
-description: >
-  A slice of [entropy](#entropy) typically used to initialize a [PRNG](#prng)/[DRBG](#drbg) or other crypto-system (e.g. [HD Wallets](#hd-wallet), [deterministic signatures](https://tools.ietf.org/html/rfc6979)).

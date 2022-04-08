@@ -1,6 +1,0 @@
-
-id: key-compromise-protocol
-file: KeyCompromiseProtocol
-term: Key Compromise Protocol
-description: >
-  A document that outlines the specific actions that are to be taken by every actor in an Information System in order to regenerate the system's set of keys in the event that a key may have been compromised.
